@@ -1,0 +1,65 @@
+[
+    {
+        "file": "dc0d.drawio",
+        "name": "main",
+        "children": [
+            {
+                "name": "Game",
+                "id": 3
+            }
+        ],
+        "connections": [
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "input",
+                "target": {
+                    "name": "Game",
+                    "id": 3
+                },
+                "target_port": "cold start"
+            }
+        ]
+    },
+    {
+        "file": "dc0d.drawio",
+        "name": "Game",
+        "children": [
+            {
+                "name": "<b>= <i>init</i></b><br>p.ok = max_hp<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0",
+                "id": 4
+            }
+        ],
+        "connections": [
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "cold start",
+                "target": {
+                    "name": "<b>= <i>init</i></b><br>p.ok = max_hp<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0",
+                    "id": 4
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "<b>= <i>init</i></b><br>p.ok = max_hp<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0",
+                    "id": 4
+                },
+                "source_port": "",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": ""
+            }
+        ]
+    }
+]
