@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-01-24T11:59:10.631Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="-fyjTh0aCGMghHOAiNm8" version="22.1.18" type="device" pages="3">
+<mxfile host="Electron" modified="2024-01-24T12:07:34.805Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.18 Chrome/120.0.6099.199 Electron/28.1.2 Safari/537.36" etag="J4oGOUymVkzBXJXtLxBm" version="22.1.18" type="device" pages="3">
   <diagram name="main" id="4NC5C235ceEbJDFCXTHk">
     <mxGraphModel dx="1114" dy="670" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -43,7 +43,7 @@
         <mxCell id="yTE4_9pnOl3mThRp0SYr-2" value="" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;fontStyle=1;glass=0;sketch=0;fontSize=12;points=[[0,0.5,0,0,0],[0.5,0,0,0,0],[0.5,1,0,0,0],[1,0.5,0,0,0]];shadow=1;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="960" y="308.75" width="50" height="47.5" as="geometry" />
         </mxCell>
-        <mxCell id="yTE4_9pnOl3mThRp0SYr-3" value="&lt;b&gt;= init&lt;/b&gt;&lt;br&gt;p.ok = max_hp&lt;br&gt;p.wallet = 0&lt;br&gt;p.pwr = 4&lt;br&gt;ndays = 0" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
+        <mxCell id="yTE4_9pnOl3mThRp0SYr-3" value="&lt;b&gt;= init&lt;/b&gt;&lt;br&gt;p.ok = max_hp&lt;br&gt;p.wallet = 0&lt;br&gt;p.pwr = 4&lt;br&gt;ndays = 0&lt;br&gt;next (eh, msg)" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="200" y="280" width="480" height="110" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
