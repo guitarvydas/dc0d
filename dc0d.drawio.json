@@ -42,7 +42,7 @@
         "name": "Game",
         "children": [
             {
-                "name": "init \u2237  p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 next (eh, msg)",
+                "name": "init \u2237  p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 \u21d2",
                 "id": 4
             },
             {
@@ -59,7 +59,7 @@
                 },
                 "source_port": "cold start",
                 "target": {
-                    "name": "init \u2237  p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 next (eh, msg)",
+                    "name": "init \u2237  p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 \u21d2",
                     "id": 4
                 },
                 "target_port": ""
@@ -67,7 +67,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "init \u2237  p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 next (eh, msg)",
+                    "name": "init \u2237  p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 \u21d2",
                     "id": 4
                 },
                 "source_port": "",
