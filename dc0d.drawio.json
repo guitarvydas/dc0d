@@ -42,7 +42,7 @@
         "name": "Game",
         "children": [
             {
-                "name": "= init p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 next (eh, msg)",
+                "name": "init \u2237  p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 next (eh, msg)",
                 "id": 4
             },
             {
@@ -59,7 +59,7 @@
                 },
                 "source_port": "cold start",
                 "target": {
-                    "name": "= init p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 next (eh, msg)",
+                    "name": "init \u2237  p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 next (eh, msg)",
                     "id": 4
                 },
                 "target_port": ""
@@ -67,7 +67,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "= init p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 next (eh, msg)",
+                    "name": "init \u2237  p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 next (eh, msg)",
                     "id": 4
                 },
                 "source_port": "",
@@ -97,7 +97,7 @@
         "name": "Rest",
         "children": [
             {
-                "name": "p.ok = max_recharge ndays += 1 zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"player=%v monster=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
+                "name": "p.ok = max_recharge ndays += 1 zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
                 "id": 3
             }
         ],
@@ -110,7 +110,7 @@
                 },
                 "source_port": "",
                 "target": {
-                    "name": "p.ok = max_recharge ndays += 1 zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"player=%v monster=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
+                    "name": "p.ok = max_recharge ndays += 1 zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
                     "id": 3
                 },
                 "target_port": ""
@@ -118,7 +118,7 @@
             {
                 "dir": 2,
                 "source": {
-                    "name": "p.ok = max_recharge ndays += 1 zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"player=%v monster=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
+                    "name": "p.ok = max_recharge ndays += 1 zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
                     "id": 3
                 },
                 "source_port": "",
