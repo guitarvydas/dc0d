@@ -43,7 +43,7 @@ components_to_include_in_project :: proc (leaves: ^[dynamic]zd.Leaf_Template) {
     //    zd.append_leaf (leaves, zd.Leaf_Template { name = "trash", instantiate = trash_instantiate })
     //    zd.append_leaf (leaves, std.string_constant ("rwr.ohm"))
     zd.append_leaf (leaves, zd.Leaf_Template { name = "init ∷  p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 next (eh, msg)", instantiate = cold_start})
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "p.ok = max_recharge ndays += 1 zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)", instantiate = rest})
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "Rest ∷ p.ok = max_recharge ndays += 1 zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)", instantiate = rest})
 }
 
 next :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
