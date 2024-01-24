@@ -26,9 +26,10 @@ m := new (Monster)
 ndays := 0
 
 main :: proc() {
+    //context.logger = std.log (zd.log_light_handlers) // see ../../0d/odin/std/lib.odin for other options
     main_container_name, diagram_names := std.parse_command_line_args ()
     palette := std.initialize_component_palette (diagram_names, components_to_include_in_project)
-    std.run_demo_debug (&palette, main_container_name, diagram_names, start_function)
+    std.run_all_outputs (&palette, main_container_name, diagram_names, start_function)
 }
 
 start_function :: proc (main_container : ^zd.Eh) {
@@ -41,8 +42,8 @@ start_function :: proc (main_container : ^zd.Eh) {
 components_to_include_in_project :: proc (leaves: ^[dynamic]zd.Leaf_Template) {
     //    zd.append_leaf (leaves, zd.Leaf_Template { name = "trash", instantiate = trash_instantiate })
     //    zd.append_leaf (leaves, std.string_constant ("rwr.ohm"))
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "= init p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 zd.send(eh=eh, port=\"\", datum=zd.new_datum_bang (), causingMessage=nil)", instantiate = cold_start})
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "p.ok = max_recharge ndays += 1 fmt.println (p, ndays)", instantiate = rest})
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "= init p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0", instantiate = cold_start})
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "p.ok = max_recharge ndays += 1 zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"player=%v monster=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)", instantiate = rest})
 }
 
 cold_start :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
@@ -61,7 +62,7 @@ rest ::  proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
     handler :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
 	p.ok = max_recharge
 	ndays += 1
-	fmt.println (p, ndays)	
+	zd.send (eh=eh, port="", datum=zd.new_datum_string (fmt.aprintf ("player=%v monster=%v ndays=%v\n", p, m, ndays)), causingMessage=msg)	
     }
     instance_name := zd.gensym ("rest")
     return zd.make_leaf (instance_name, owner, nil, handler)
