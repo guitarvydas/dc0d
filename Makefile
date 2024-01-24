@@ -12,7 +12,8 @@ dc0d: dc0d.drawio.json
 
 dc0d.drawio.json: dc0d.drawio transpile.drawio.json
 	$(D2J) dc0d.drawio
-	python3 0D/util/rmformatting.py <dc0d.drawio.json >/tmp/dc0d.drawio.json
+	rm -f /tmp/dc0d.drawio.json
+	node 0D/util/rmhtml.js dc0d.drawio.json /tmp/dc0d.drawio.json
 	cp /tmp/dc0d.drawio.json ./dc0d.drawio.json
 
 transpile.drawio.json: $(LIBSRC)/transpile.drawio
