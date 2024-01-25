@@ -1,0 +1,133 @@
+[
+    {
+        "file": "dc0d.drawio",
+        "name": "main",
+        "children": [
+            {
+                "name": "Game",
+                "id": 6
+            }
+        ],
+        "connections": [
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "",
+                "target": {
+                    "name": "Game",
+                    "id": 6
+                },
+                "target_port": "cold start"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Game",
+                    "id": 6
+                },
+                "source_port": "",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": ""
+            }
+        ]
+    },
+    {
+        "file": "dc0d.drawio",
+        "name": "Game",
+        "children": [
+            {
+                "name": "init \u2237  p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 \u21d2",
+                "id": 4
+            },
+            {
+                "name": "Rest",
+                "id": 8
+            }
+        ],
+        "connections": [
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "cold start",
+                "target": {
+                    "name": "init \u2237  p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 \u21d2",
+                    "id": 4
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "init \u2237  p.ok = max_hp p.wallet = 0 p.pwr = 4 ndays = 0 \u21d2",
+                    "id": 4
+                },
+                "source_port": "",
+                "target": {
+                    "name": "Rest",
+                    "id": 8
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Rest",
+                    "id": 8
+                },
+                "source_port": "",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": ""
+            }
+        ]
+    },
+    {
+        "file": "dc0d.drawio",
+        "name": "Rest",
+        "children": [
+            {
+                "name": "Rest \u2237 p.ok = max_recharge ndays += 1 zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
+                "id": 3
+            }
+        ],
+        "connections": [
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "",
+                "target": {
+                    "name": "Rest \u2237 p.ok = max_recharge ndays += 1 zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
+                    "id": 3
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Rest \u2237 p.ok = max_recharge ndays += 1 zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
+                    "id": 3
+                },
+                "source_port": "",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": ""
+            }
+        ]
+    }
+]

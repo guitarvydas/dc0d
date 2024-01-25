@@ -1,0 +1,1 @@
+                "name": "Rest \u2237 p.ok = max_recharge ndays += 1 zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",

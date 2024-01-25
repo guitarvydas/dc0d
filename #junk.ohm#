@@ -1,0 +1,54 @@
+generator0D {
+  chars = char+
+  char =
+    | escapedChar -- esc
+    | codeMacro -- macro
+    | anychar -- any
+
+  innerchar =
+    | escapedChar -- esc
+    | codeMacro -- macro
+    | anychar -- any
+
+  anychar = any
+
+  escapedChar =
+    | "\"" -- dquote
+
+  codeMacro = dq namechar* spaces codeMark codechar+ dq 
+  dq = "\""
+  namechar = ~codeMark ~nl ~dq any
+  nl = "\\n"
+  codechar =
+    | dq codechar* dq -- nested
+    | ~nl ~dq innerchar -- other
+  codeMark = "∷" | "\\u2237"
+
+}
+
+---
+
+  chars = char+
+  char =
+    | escapedChar -- esc
+    | codeMacro -- macro
+    | anychar -- any
+
+  innerchar =
+    | escapedChar -- esc
+    | codeMacro -- macro
+    | anychar -- any
+
+  anychar = any
+
+  escapedChar =
+    | "\\" -- dquote
+
+  codeMacro = dq namechar* spaces codeMark codechar+ dq 
+  dq = "\\""
+  namechar = ~codeMark ~nl ~dq any
+  nl = "\\n"
+  codechar =
+    | dq codechar* dq -- nested
+    | ~nl ~dq innerchar -- other
+  codeMark = "∷" | "\\u2237"
