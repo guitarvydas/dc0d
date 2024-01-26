@@ -2,7 +2,9 @@ LIBSRC=0D/odin/std
 ODIN_FLAGS ?= -debug -o:none
 D2J=0d/das2json/das2json
 
-dev:
+dev : big-dev
+
+little-dev:
 	node generate.js test.json
 
 big-dev:

@@ -14,7 +14,7 @@ semantics.addOperation('gen', {
     chars : function (cs) { return cs.gen ().join (''); },
 
     char_esc : function (c) { return c.gen (); },
-    char_macro : function (m) { return "\n" + "⟪" + m.gen () + "⟫"; },
+    char_macro : function (m) { return "\n" + m.gen (); },
     char_any : function (c) { return c.gen (); },
 
     innerchar_esc : function (c) { return c.gen (); },
@@ -24,7 +24,7 @@ semantics.addOperation('gen', {
     anychar : function (c) { return this.sourceString; },
     
     escapedChar_dquote : function (_) { return '"'; },
-    codeMacro: function (dq1, namecs, ws1, _defcode, ws2, cs, dq2) { return `${encodeURIComponent (cs.gen ().join (''))}`; },
+    codeMacro: function (dq1, namecs, _defcode, ws2, cs, dq2) { return `❨${encodeURIComponent (namecs.gen ().join (''))}❩⟪${encodeURIComponent (cs.gen ().join (''))}⟫`; },
     codechar_nested : function (dq1, cs, dq2) { return "\\\"" + cs.gen ().join ('') + "\\\""; },
     codechar_other : function (c) { return this.sourceString; },
     codeMark: function (x) { return "∷"; },

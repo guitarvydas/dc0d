@@ -15,7 +15,7 @@ generator0D {
   escapedChar =
     | "\\\"" -- dquote
 
-  codeMacro = dq namechar* spaces codeMark spaces codechar+ dq 
+  codeMacro = dq namechar* codeMark spaces codechar+ dq 
   dq = "\""
   namechar = ~codeMark ~nl ~dq any
   nl = "\n"
