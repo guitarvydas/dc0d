@@ -43,8 +43,8 @@ start_function :: proc (main_container : ^zd.Eh) {
 components_to_include_in_project :: proc (leaves: ^[dynamic]zd.Leaf_Template) {
     //    zd.append_leaf (leaves, zd.Leaf_Template { name = "trash", instantiate = trash_instantiate })
     //    zd.append_leaf (leaves, std.string_constant ("rwr.ohm"))
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "init<br>∷<br>p.ok = max_hp<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>⇒", instantiate = cold_start})
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "Rest<br>∷<br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)", instantiate = rest})
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "init ∷<br>p.ok = max_hp<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>⇒", instantiate = cold_start})
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "Rest ∷<br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)", instantiate = rest})
 }
 
 next :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
