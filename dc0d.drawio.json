@@ -42,7 +42,7 @@
         "name": "Game",
         "children": [
             {
-                "name": "<i style=\"\"><b>init<br></b></i><b>\u2237&nbsp;<br></b>p.ok = max_hp<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>\u21d2",
+                "name": "init<br>\u2237<br>p.ok = max_hp<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>\u21d2",
                 "id": 4
             },
             {
@@ -59,7 +59,7 @@
                 },
                 "source_port": "cold start",
                 "target": {
-                    "name": "<i style=\"\"><b>init<br></b></i><b>\u2237&nbsp;<br></b>p.ok = max_hp<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>\u21d2",
+                    "name": "init<br>\u2237<br>p.ok = max_hp<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>\u21d2",
                     "id": 4
                 },
                 "target_port": ""
@@ -67,7 +67,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "<i style=\"\"><b>init<br></b></i><b>\u2237&nbsp;<br></b>p.ok = max_hp<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>\u21d2",
+                    "name": "init<br>\u2237<br>p.ok = max_hp<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>\u21d2",
                     "id": 4
                 },
                 "source_port": "",
@@ -97,7 +97,7 @@
         "name": "Rest",
         "children": [
             {
-                "name": "<span style=\"border-color: var(--border-color);\"><b><i>Rest</i><br>\u2237<br></b></span>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
+                "name": "Rest<br>\u2237<br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
                 "id": 3
             }
         ],
@@ -110,7 +110,7 @@
                 },
                 "source_port": "",
                 "target": {
-                    "name": "<span style=\"border-color: var(--border-color);\"><b><i>Rest</i><br>\u2237<br></b></span>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
+                    "name": "Rest<br>\u2237<br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
                     "id": 3
                 },
                 "target_port": ""
@@ -118,7 +118,7 @@
             {
                 "dir": 2,
                 "source": {
-                    "name": "<span style=\"border-color: var(--border-color);\"><b><i>Rest</i><br>\u2237<br></b></span>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
+                    "name": "Rest<br>\u2237<br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)",
                     "id": 3
                 },
                 "source_port": "",

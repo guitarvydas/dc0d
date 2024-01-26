@@ -2,17 +2,22 @@ LIBSRC=0D/odin/std
 ODIN_FLAGS ?= -debug -o:none
 D2J=0d/das2json/das2json
 
-dev : big-dev
+# moved to ../gen0d...
 
-little-dev:
-	node generate.js test.json
+# dev : big-dev
 
-big-dev:
-	$(D2J) dc0d.drawio
-	node 0D/util/rmhtml.js dc0d.drawio.json >dc0d.2.json
-	node generate.js dc0d.2.json
+# little-dev:
+# 	node generate.js test.json
 
-next-dev: clean run
+# big-dev:
+# 	$(D2J) dc0d.drawio
+# 	node 0D/util/rmhtml.js dc0d.drawio.json >dc0d.2.json
+# 	#node generate.js dc0d.2.json
+# 	#node generate.js dc0d.2.json | grep ':: proc' >/tmp/dc0d.3
+# 	#node 0D/util/unescape.js /tmp/dc0d.3
+
+
+dev: clean run
 
 run: dc0d transpile.drawio.json
 	./dc0d main dc0d.drawio $(LIBSRC)/transpile.drawio
