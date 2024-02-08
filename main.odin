@@ -1,4 +1,4 @@
-package project
+package dc0d
 
 import "core:fmt"
 
