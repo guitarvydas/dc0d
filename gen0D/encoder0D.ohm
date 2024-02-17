@@ -1,0 +1,53 @@
+encoder0D {
+  chars = char+
+  char =
+    | escapedChar -- esc
+    | html -- html
+    | codeMacro -- codemacro
+    | predicateMacro -- predmacro
+    | anychar -- any
+
+  innerchar =
+    | escapedChar -- esc
+    | codeMacro -- macro
+    | anychar -- any
+
+  anychar = any
+
+  escapedChar =
+    | "\\\"" -- dquote
+
+  codeMacro = dq namechar* codeMark spaces codechar+ dq 
+  predicateMacro = dq predicateMark spaces codechar+ dq 
+  choiceMacro = dq choiceMark spaces codechar+ dq 
+
+  dq = "\""
+  namechar = 
+    | ~defmark ~nl ~dq html -- html
+    | ~defmark ~nl ~dq any -- other
+  nl = "\n"
+  codechar =
+    | "\\\"" -- dquote
+    | "\\\\" -- backslash
+    | "\\n" -- nl
+    | nextMark -- next
+    | html -- html
+    | dq codechar* dq -- nested
+    | ~nl ~dq innerchar -- other
+  codeMark = "∷" | "\\u2237"
+  nextMark = "⇒" | "\\u21d2"
+  predicateMark = "⁇" | "\\u2047"
+  choiceMark =
+    | "⟪choice⟫" -- short
+    | choiceLB "choice" choiceRB -- long
+
+  choiceLB = "\u27ea"
+  choiceRB = "\u27eb"
+
+  // marks used to define macro phrases (e.g. nextMark is an operator, not a def)
+  defmark = codeMark | predicateMark
+
+  html = "<" htmlchar+ ">"
+  htmlchar = ~">" any
+
+}

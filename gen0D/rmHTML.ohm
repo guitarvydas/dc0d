@@ -1,0 +1,14 @@
+rmHTML {
+  chars = char+
+  char =
+    | "&" htmlEscape+ -- htmlEscapes
+    | any -- other
+
+  htmlEscape =
+    | "lt;" -- lt
+    | "gt;" -- gt
+    | "amp;" -- amp
+    | "quot;" -- quot
+    | "#39;" -- sq
+    | "#039;" -- backslash
+}

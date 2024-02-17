@@ -1,0 +1,29 @@
+incs {
+  Drawing [_lb FileName DrawingName Children Connections _rb] = ‛«Children»’
+
+  Children [_key _colon _lb Child+ _rb] = ‛«Child»’
+  Connections [_key _colon _lb Object+ _rb] = ‛’
+
+  Child [_lb _key _colon Value _keyid _colon2 integer _rb] = ‛«Value»’
+
+  Key [dq1 s dq2] = ‛«dq1»«s»«dq2»’
+
+  NamedObject [string _colon Object] = ‛’
+  NamedValue [string _colon Value] = ‛’
+
+  KeyedString [_k _colon string] = ‛’
+
+  Object [_lb NamedValue+ _rb] = ‛«NamedValue»’
+  Array [_lb x+ _rb] = ‛«x»’
+  CodeDescriptor [_mark procname code] =
+   ‛\nzd.append_leaf (leaves, zd.Leaf_Template { name = "«procname»∷«code»", instantiate = «procname» })’
+  PredicateDescriptor [_mark code] ‛«_.pushNewPredicateName ()»’ =
+   ‛\nzd.append_leaf (leaves, zd.Leaf_Template { name = "«_.topPredicateName ()»∷«code»", instantiate = «_.topPredicateName ()» })’
+
+  string [dq1 notDQ* dq2] = ‛’
+  anychar_escaped [_bs any] = ‛’
+  anychar_other [any] = ‛’
+
+  procname [s] = ‛«s.replaceAll (" ", "_")»’
+  escstuff [_lb cs+ _rb] = ‛«decodeURIComponent (cs)»’
+}

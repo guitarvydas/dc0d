@@ -1,0 +1,44 @@
+incs {
+  Drawings = Array<Drawing>
+  Drawing = "{" FileName DrawingName Children Connections "}"
+
+  Children = Key<"children"> ":" "[" Child* "]"
+  Connections = Key<"connections"> ":" "[" Object* "]"
+
+  Child = "{" Key<"name"> ":" Value Key<"id"> ":" integer "}"
+
+  FileName = KeyedString<"file">
+  DrawingName = KeyedString<"name">
+  
+  Key<s> = dq s dq
+
+  NamedObject = string ":" Object
+  NamedValue = string ":" Value
+  NamedAttribute = NamedValue
+
+  Value = Object | Array<Value> | CodeDescriptor | PredicateDescriptor | Atom
+  KeyedString<k> = Key<k> ":" string
+
+  Object = "{" NamedValue+ "}"
+  Array<x> = "[" x+ "]"
+  Atom = string | integer | constant
+  CodeDescriptor = "∷" procname code
+  PredicateDescriptor = "⁇"  code
+
+  string = dq notDQ* dq
+  dq = "\""
+  notDQ = ~dq anychar
+  anychar =
+    | "\\" any -- escaped
+    | any -- other
+    
+  integer = digit+
+  constant = "true" | "false"
+  space += ","
+
+  procname = escstuff
+  code = escstuff
+  escstuff = "❨" nonBracket+ "❩"
+  nonBracket= ~"❨" ~"❩" any
+
+}

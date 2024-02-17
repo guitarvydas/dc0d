@@ -1,0 +1,16 @@
+stripHTML {
+  chars = char+
+  char =
+    | "<i " nonRB+ ">" -- italicWithAttr
+    | "<i>" -- italicNoAttr
+    | "</i>" -- closeItalic
+    | "<b " nonRB+ ">" -- boldWithAttr
+    | "<b>" -- boldNoAttr
+    | "</b>" -- closeBold
+    | "<span " nonRB+ ">" -- spanWithAttr
+    | "<span>" -- spanNoAttr
+    | "</span>" -- closeSpan
+    | any -- other    
+
+  nonRB = ~">" any
+}
