@@ -24,9 +24,6 @@ dc0d.drawio.json: dc0d.drawio transpile.drawio.json
 transpile.drawio.json: $(LIBSRC)/transpile.drawio
 	$(D2J) $(LIBSRC)/transpile.drawio
 
-gen0D.drawio.json: $(GEN0DDIR)/gen0d.drawio
-	$(D2J) $(GEN0DDIR)/gen0d.drawio
-
 
 clean:
 	rm -rf dc0d dc0d.dSYM

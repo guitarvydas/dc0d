@@ -1092,11 +1092,11 @@
         "name": "Fight",
         "children": [
             {
-                "name": "<b style=\"border-color: var(--border-color);\">Damage Player\u2237<br></b>p.ok -= N<br>\u21d2",
+                "name": "<b style=\"border-color: var(--border-color);\">Damage Player\u2237<br></b>p.ok -= string2int (msg.datum.(string))<br>\u21d2",
                 "id": 9
             },
             {
-                "name": "<b style=\"border-color: var(--border-color);\">Damage Monster\u2237<br></b>m.ok -= N<br style=\"border-color: var(--border-color);\">\u21d2",
+                "name": "<b style=\"border-color: var(--border-color);\">Damage Monster\u2237<br></b>m.ok -=&nbsp;string2int (msg.datum.(string))<br style=\"border-color: var(--border-color);\">\u21d2",
                 "id": 12
             },
             {
@@ -1126,7 +1126,7 @@
                 },
                 "source_port": "hit monster",
                 "target": {
-                    "name": "<b style=\"border-color: var(--border-color);\">Damage Monster\u2237<br></b>m.ok -= N<br style=\"border-color: var(--border-color);\">\u21d2",
+                    "name": "<b style=\"border-color: var(--border-color);\">Damage Monster\u2237<br></b>m.ok -=&nbsp;string2int (msg.datum.(string))<br style=\"border-color: var(--border-color);\">\u21d2",
                     "id": 12
                 },
                 "target_port": "N"
@@ -1134,7 +1134,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "<b style=\"border-color: var(--border-color);\">Damage Player\u2237<br></b>p.ok -= N<br>\u21d2",
+                    "name": "<b style=\"border-color: var(--border-color);\">Damage Player\u2237<br></b>p.ok -= string2int (msg.datum.(string))<br>\u21d2",
                     "id": 9
                 },
                 "source_port": "",
@@ -1147,7 +1147,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "<b style=\"border-color: var(--border-color);\">Damage Monster\u2237<br></b>m.ok -= N<br style=\"border-color: var(--border-color);\">\u21d2",
+                    "name": "<b style=\"border-color: var(--border-color);\">Damage Monster\u2237<br></b>m.ok -=&nbsp;string2int (msg.datum.(string))<br style=\"border-color: var(--border-color);\">\u21d2",
                     "id": 12
                 },
                 "source_port": "",
@@ -1165,7 +1165,7 @@
                 },
                 "source_port": "hit player",
                 "target": {
-                    "name": "<b style=\"border-color: var(--border-color);\">Damage Player\u2237<br></b>p.ok -= N<br>\u21d2",
+                    "name": "<b style=\"border-color: var(--border-color);\">Damage Player\u2237<br></b>p.ok -= string2int (msg.datum.(string))<br>\u21d2",
                     "id": 9
                 },
                 "target_port": "N"
@@ -1545,11 +1545,11 @@
                 "id": 14
             },
             {
-                "name": "<b style=\"border-color: var(--border-color);\">hitmonster\u2237<br></b>zd.send (eh, \"\", zd.new_datum_int_as_string (p.pwr), msg)",
+                "name": "<b style=\"border-color: var(--border-color);\">hitmonster\u2237<br></b>zd.send (eh, \"\", zd.new_datum_int (p.pwr), msg)",
                 "id": 18
             },
             {
-                "name": "<b style=\"border-color: var(--border-color);\">hitplayer\u2237<br></b>zd.send (eh, \"\", zd.new_datum_int_as_string (m.pwr), msg)",
+                "name": "<b style=\"border-color: var(--border-color);\">hitplayer\u2237<br></b>zd.send (eh, \"\", zd.new_datum_int (m.pwr), msg)",
                 "id": 21
             },
             {
@@ -1579,7 +1579,7 @@
                 },
                 "source_port": "no",
                 "target": {
-                    "name": "<b style=\"border-color: var(--border-color);\">hitmonster\u2237<br></b>zd.send (eh, \"\", zd.new_datum_int_as_string (p.pwr), msg)",
+                    "name": "<b style=\"border-color: var(--border-color);\">hitmonster\u2237<br></b>zd.send (eh, \"\", zd.new_datum_int (p.pwr), msg)",
                     "id": 18
                 },
                 "target_port": ""
@@ -1605,7 +1605,7 @@
                 },
                 "source_port": "no",
                 "target": {
-                    "name": "<b style=\"border-color: var(--border-color);\">hitplayer\u2237<br></b>zd.send (eh, \"\", zd.new_datum_int_as_string (m.pwr), msg)",
+                    "name": "<b style=\"border-color: var(--border-color);\">hitplayer\u2237<br></b>zd.send (eh, \"\", zd.new_datum_int (m.pwr), msg)",
                     "id": 21
                 },
                 "target_port": ""
@@ -1639,7 +1639,7 @@
             {
                 "dir": 2,
                 "source": {
-                    "name": "<b style=\"border-color: var(--border-color);\">hitmonster\u2237<br></b>zd.send (eh, \"\", zd.new_datum_int_as_string (p.pwr), msg)",
+                    "name": "<b style=\"border-color: var(--border-color);\">hitmonster\u2237<br></b>zd.send (eh, \"\", zd.new_datum_int (p.pwr), msg)",
                     "id": 18
                 },
                 "source_port": "",
@@ -1665,7 +1665,7 @@
             {
                 "dir": 2,
                 "source": {
-                    "name": "<b style=\"border-color: var(--border-color);\">hitplayer\u2237<br></b>zd.send (eh, \"\", zd.new_datum_int_as_string (m.pwr), msg)",
+                    "name": "<b style=\"border-color: var(--border-color);\">hitplayer\u2237<br></b>zd.send (eh, \"\", zd.new_datum_int (m.pwr), msg)",
                     "id": 21
                 },
                 "source_port": "",

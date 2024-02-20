@@ -30,7 +30,7 @@ main :: proc() {
     arg, main_container_name, diagram_names := std.parse_command_line_args ()
     palette := std.initialize_component_palette (diagram_names, components_to_include_in_project)
     //zd.dump_registry (palette)
-    std.run_all_outputs (&palette, main_container_name, diagram_names, start_function)
+    std.run_all_outputs (&palette, arg, main_container_name, diagram_names, start_function)
 }
 
 start_function :: proc (arg: string, main_container : ^zd.Eh) {
@@ -46,4 +46,8 @@ next :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
 
 components_to_include_in_project :: proc (leaves: ^[dynamic]zd.Leaf_Template) {
     generated_components_to_include_in_project (leaves)
+}
+
+int2string :: proc (i : int) -> string {
+    return fmt.aprintf ("%d", i)
 }
