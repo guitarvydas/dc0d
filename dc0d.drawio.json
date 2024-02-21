@@ -290,7 +290,7 @@
         "name": "Rest",
         "children": [
             {
-                "name": "Rest\u2237<br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)<br>\u21d2",
+                "name": "Do Rest\u2237<br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)<br>\u21d2",
                 "id": 3
             }
         ],
@@ -303,7 +303,7 @@
                 },
                 "source_port": "",
                 "target": {
-                    "name": "Rest\u2237<br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)<br>\u21d2",
+                    "name": "Do Rest\u2237<br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)<br>\u21d2",
                     "id": 3
                 },
                 "target_port": ""
@@ -311,7 +311,7 @@
             {
                 "dir": 2,
                 "source": {
-                    "name": "Rest\u2237<br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)<br>\u21d2",
+                    "name": "Do Rest\u2237<br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)<br>\u21d2",
                     "id": 3
                 },
                 "source_port": "",
@@ -1092,11 +1092,11 @@
         "name": "Fight",
         "children": [
             {
-                "name": "Damage Player\u2237<br>p.ok -= string2int (msg.datum.(string))<br>\u21d2",
+                "name": "Damage Player\u2237<br>p.ok -= msg.datum.data.(int))<br>\u21d2",
                 "id": 9
             },
             {
-                "name": "Damage Monster\u2237<br>m.ok -= string2int (msg.datum.(string))<br style=\"border-color: var(--border-color);\">\u21d2",
+                "name": "Damage Monster\u2237<br>m.ok -= msg.datum.data.(int))<br style=\"border-color: var(--border-color);\">\u21d2",
                 "id": 12
             },
             {
@@ -1126,7 +1126,7 @@
                 },
                 "source_port": "hit monster",
                 "target": {
-                    "name": "Damage Monster\u2237<br>m.ok -= string2int (msg.datum.(string))<br style=\"border-color: var(--border-color);\">\u21d2",
+                    "name": "Damage Monster\u2237<br>m.ok -= msg.datum.data.(int))<br style=\"border-color: var(--border-color);\">\u21d2",
                     "id": 12
                 },
                 "target_port": "N"
@@ -1134,7 +1134,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "Damage Player\u2237<br>p.ok -= string2int (msg.datum.(string))<br>\u21d2",
+                    "name": "Damage Player\u2237<br>p.ok -= msg.datum.data.(int))<br>\u21d2",
                     "id": 9
                 },
                 "source_port": "",
@@ -1147,7 +1147,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "Damage Monster\u2237<br>m.ok -= string2int (msg.datum.(string))<br style=\"border-color: var(--border-color);\">\u21d2",
+                    "name": "Damage Monster\u2237<br>m.ok -= msg.datum.data.(int))<br style=\"border-color: var(--border-color);\">\u21d2",
                     "id": 12
                 },
                 "source_port": "",
@@ -1165,7 +1165,7 @@
                 },
                 "source_port": "hit player",
                 "target": {
-                    "name": "Damage Player\u2237<br>p.ok -= string2int (msg.datum.(string))<br>\u21d2",
+                    "name": "Damage Player\u2237<br>p.ok -= msg.datum.data.(int))<br>\u21d2",
                     "id": 9
                 },
                 "target_port": "N"
@@ -2131,7 +2131,7 @@
         "name": "Page-20",
         "children": [
             {
-                "name": "Fight Auto",
+                "name": "Damage Player\u2237<br>p.ok -= N<br>\u21d2",
                 "id": 2
             }
         ],
