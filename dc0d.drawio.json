@@ -325,441 +325,6 @@
     },
     {
         "file": "dc0d.drawio",
-        "name": "Shop",
-        "children": [
-            {
-                "name": "Shop Choice",
-                "id": 5
-            },
-            {
-                "name": "updgrade\u2237<br>p.pwr += damage_sword<br>p.wallet -= cost_sword<br>\u21d2",
-                "id": 10
-            },
-            {
-                "name": "\u2047p.wallet &gt;= cost_sword",
-                "id": 13
-            }
-        ],
-        "connections": [
-            {
-                "dir": 0,
-                "source": {
-                    "name": "",
-                    "id": 0
-                },
-                "source_port": "",
-                "target": {
-                    "name": "\u2047p.wallet &gt;= cost_sword",
-                    "id": 13
-                },
-                "target_port": ""
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "updgrade\u2237<br>p.pwr += damage_sword<br>p.wallet -= cost_sword<br>\u21d2",
-                    "id": 10
-                },
-                "source_port": "",
-                "target": {
-                    "name": "\u2047p.wallet &gt;= cost_sword",
-                    "id": 13
-                },
-                "target_port": ""
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "\u2047p.wallet &gt;= cost_sword",
-                    "id": 13
-                },
-                "source_port": "yes",
-                "target": {
-                    "name": "Shop Choice",
-                    "id": 5
-                },
-                "target_port": "buy"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "Shop Choice",
-                    "id": 5
-                },
-                "source_port": "buy",
-                "target": {
-                    "name": "updgrade\u2237<br>p.pwr += damage_sword<br>p.wallet -= cost_sword<br>\u21d2",
-                    "id": 10
-                },
-                "target_port": ""
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "\u2047p.wallet &gt;= cost_sword",
-                    "id": 13
-                },
-                "source_port": "no",
-                "target": {
-                    "name": "Shop Choice",
-                    "id": 5
-                },
-                "target_port": "no buy"
-            },
-            {
-                "dir": 2,
-                "source": {
-                    "name": "Shop Choice",
-                    "id": 5
-                },
-                "source_port": "leave",
-                "target": {
-                    "name": "",
-                    "id": 0
-                },
-                "target_port": ""
-            }
-        ]
-    },
-    {
-        "file": "dc0d.drawio",
-        "name": "Shop Choice",
-        "children": [
-            {
-                "name": "Sync Ask",
-                "id": 6
-            },
-            {
-                "name": "Format Shop Choice",
-                "id": 10
-            }
-        ],
-        "connections": [
-            {
-                "dir": 0,
-                "source": {
-                    "name": "",
-                    "id": 0
-                },
-                "source_port": "no buy",
-                "target": {
-                    "name": "Format Shop Choice",
-                    "id": 10
-                },
-                "target_port": "no buy"
-            },
-            {
-                "dir": 0,
-                "source": {
-                    "name": "",
-                    "id": 0
-                },
-                "source_port": "buy",
-                "target": {
-                    "name": "Format Shop Choice",
-                    "id": 10
-                },
-                "target_port": "buy"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "Format Shop Choice",
-                    "id": 10
-                },
-                "source_port": "",
-                "target": {
-                    "name": "Sync Ask",
-                    "id": 6
-                },
-                "target_port": ""
-            },
-            {
-                "dir": 2,
-                "source": {
-                    "name": "Sync Ask",
-                    "id": 6
-                },
-                "source_port": "",
-                "target": {
-                    "name": "",
-                    "id": 0
-                },
-                "target_port": ""
-            }
-        ]
-    },
-    {
-        "file": "dc0d.drawio",
-        "name": "Format Shop Choice",
-        "children": [
-            {
-                "name": "'leave;buy'",
-                "id": 5
-            },
-            {
-                "name": "'leave'",
-                "id": 8
-            }
-        ],
-        "connections": [
-            {
-                "dir": 0,
-                "source": {
-                    "name": "",
-                    "id": 0
-                },
-                "source_port": "buy",
-                "target": {
-                    "name": "'leave;buy'",
-                    "id": 5
-                },
-                "target_port": "\u237a"
-            },
-            {
-                "dir": 0,
-                "source": {
-                    "name": "",
-                    "id": 0
-                },
-                "source_port": "no buy",
-                "target": {
-                    "name": "'leave'",
-                    "id": 8
-                },
-                "target_port": "\u237a"
-            },
-            {
-                "dir": 2,
-                "source": {
-                    "name": "'leave'",
-                    "id": 8
-                },
-                "source_port": "\u237a",
-                "target": {
-                    "name": "",
-                    "id": 0
-                },
-                "target_port": ""
-            },
-            {
-                "dir": 2,
-                "source": {
-                    "name": "'leave;buy'",
-                    "id": 5
-                },
-                "source_port": "\u237a",
-                "target": {
-                    "name": "",
-                    "id": 0
-                },
-                "target_port": ""
-            }
-        ]
-    },
-    {
-        "file": "dc0d.drawio",
-        "name": "Alternate Format Shop Choice",
-        "children": [
-            {
-                "name": "1then2",
-                "id": 3
-            },
-            {
-                "name": "'leave'",
-                "id": 7
-            },
-            {
-                "name": "'buy'",
-                "id": 14
-            },
-            {
-                "name": "1then2",
-                "id": 17
-            },
-            {
-                "name": "'leave'",
-                "id": 23
-            },
-            {
-                "name": "Make String List",
-                "id": 31
-            }
-        ],
-        "connections": [
-            {
-                "dir": 0,
-                "source": {
-                    "name": "",
-                    "id": 0
-                },
-                "source_port": "no buy",
-                "target": {
-                    "name": "1then2",
-                    "id": 3
-                },
-                "target_port": "2"
-            },
-            {
-                "dir": 0,
-                "source": {
-                    "name": "",
-                    "id": 0
-                },
-                "source_port": "buy",
-                "target": {
-                    "name": "'leave'",
-                    "id": 7
-                },
-                "target_port": "\u237a"
-            },
-            {
-                "dir": 0,
-                "source": {
-                    "name": "",
-                    "id": 0
-                },
-                "source_port": "buy",
-                "target": {
-                    "name": "'buy'",
-                    "id": 14
-                },
-                "target_port": "\u237a"
-            },
-            {
-                "dir": 0,
-                "source": {
-                    "name": "",
-                    "id": 0
-                },
-                "source_port": "buy",
-                "target": {
-                    "name": "1then2",
-                    "id": 3
-                },
-                "target_port": "2"
-            },
-            {
-                "dir": 0,
-                "source": {
-                    "name": "",
-                    "id": 0
-                },
-                "source_port": "no buy",
-                "target": {
-                    "name": "'leave'",
-                    "id": 23
-                },
-                "target_port": "\u237a"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "1then2",
-                    "id": 3
-                },
-                "source_port": "2",
-                "target": {
-                    "name": "Make String List",
-                    "id": 31
-                },
-                "target_port": "go"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "1then2",
-                    "id": 17
-                },
-                "source_port": "1",
-                "target": {
-                    "name": "Make String List",
-                    "id": 31
-                },
-                "target_port": "concat"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "'buy'",
-                    "id": 14
-                },
-                "source_port": "\u237a",
-                "target": {
-                    "name": "1then2",
-                    "id": 17
-                },
-                "target_port": "2"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "1then2",
-                    "id": 17
-                },
-                "source_port": "2",
-                "target": {
-                    "name": "1then2",
-                    "id": 3
-                },
-                "target_port": "1"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "1then2",
-                    "id": 3
-                },
-                "source_port": "1",
-                "target": {
-                    "name": "Make String List",
-                    "id": 31
-                },
-                "target_port": "concat"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "'leave'",
-                    "id": 7
-                },
-                "source_port": "\u237a",
-                "target": {
-                    "name": "1then2",
-                    "id": 17
-                },
-                "target_port": "1"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "'leave'",
-                    "id": 23
-                },
-                "source_port": "\u237a",
-                "target": {
-                    "name": "1then2",
-                    "id": 3
-                },
-                "target_port": "1"
-            },
-            {
-                "dir": 2,
-                "source": {
-                    "name": "Make String List",
-                    "id": 31
-                },
-                "source_port": "",
-                "target": {
-                    "name": "",
-                    "id": 0
-                },
-                "target_port": ""
-            }
-        ]
-    },
-    {
-        "file": "dc0d.drawio",
         "name": "Sync Ask",
         "children": [
             {
@@ -814,20 +379,16 @@
         "name": "Game Ask",
         "children": [
             {
-                "name": "'adventure;rest;shop;quit'",
-                "id": 8
-            },
-            {
-                "name": "Sync Ask",
+                "name": "Demux 4",
                 "id": 9
             },
             {
-                "name": "1then2",
-                "id": 21
+                "name": "Sync Ask",
+                "id": 18
             },
             {
-                "name": "Demux 4",
-                "id": 26
+                "name": "Game Choice",
+                "id": 20
             }
         ],
         "connections": [
@@ -837,83 +398,44 @@
                     "name": "",
                     "id": 0
                 },
-                "source_port": "go",
+                "source_port": "",
                 "target": {
-                    "name": "'adventure;rest;shop;quit'",
-                    "id": 8
+                    "name": "Game Choice",
+                    "id": 20
                 },
-                "target_port": "\u237a"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "1then2",
-                    "id": 21
-                },
-                "source_port": "1",
-                "target": {
-                    "name": "Demux 4",
-                    "id": 26
-                },
-                "target_port": "menu"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "1then2",
-                    "id": 21
-                },
-                "source_port": "2",
-                "target": {
-                    "name": "Demux 4",
-                    "id": 26
-                },
-                "target_port": "choice"
+                "target_port": ""
             },
             {
                 "dir": 1,
                 "source": {
                     "name": "Sync Ask",
-                    "id": 9
+                    "id": 18
                 },
                 "source_port": "",
                 "target": {
-                    "name": "1then2",
-                    "id": 21
+                    "name": "Demux 4",
+                    "id": 9
                 },
-                "target_port": "2"
+                "target_port": ""
             },
             {
                 "dir": 1,
                 "source": {
-                    "name": "'adventure;rest;shop;quit'",
-                    "id": 8
+                    "name": "Game Choice",
+                    "id": 20
                 },
-                "source_port": "\u237a",
-                "target": {
-                    "name": "1then2",
-                    "id": 21
-                },
-                "target_port": "1"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "'adventure;rest;shop;quit'",
-                    "id": 8
-                },
-                "source_port": "\u237a",
+                "source_port": "",
                 "target": {
                     "name": "Sync Ask",
-                    "id": 9
+                    "id": 18
                 },
                 "target_port": ""
             },
             {
                 "dir": 2,
                 "source": {
-                    "name": "Demux 4",
-                    "id": 26
+                    "name": "Game Choice",
+                    "id": 20
                 },
                 "source_port": "\u2717",
                 "target": {
@@ -926,6 +448,19 @@
                 "dir": 2,
                 "source": {
                     "name": "Sync Ask",
+                    "id": 18
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Demux 4",
                     "id": 9
                 },
                 "source_port": "\u2717",
@@ -939,33 +474,20 @@
                 "dir": 2,
                 "source": {
                     "name": "Demux 4",
-                    "id": 26
+                    "id": 9
                 },
-                "source_port": "4",
+                "source_port": "1",
                 "target": {
                     "name": "",
                     "id": 0
                 },
-                "target_port": "quit"
+                "target_port": "advenure"
             },
             {
                 "dir": 2,
                 "source": {
                     "name": "Demux 4",
-                    "id": 26
-                },
-                "source_port": "3",
-                "target": {
-                    "name": "",
-                    "id": 0
-                },
-                "target_port": "shop"
-            },
-            {
-                "dir": 2,
-                "source": {
-                    "name": "Demux 4",
-                    "id": 26
+                    "id": 9
                 },
                 "source_port": "2",
                 "target": {
@@ -978,14 +500,27 @@
                 "dir": 2,
                 "source": {
                     "name": "Demux 4",
-                    "id": 26
+                    "id": 9
                 },
-                "source_port": "1",
+                "source_port": "3",
                 "target": {
                     "name": "",
                     "id": 0
                 },
-                "target_port": "advenure"
+                "target_port": "shop"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Demux 4",
+                    "id": 9
+                },
+                "source_port": "4",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "quit"
             }
         ]
     },
@@ -1383,20 +918,16 @@
         "name": "Fight Ask",
         "children": [
             {
-                "name": "'fight;flee'",
-                "id": 7
+                "name": "Demux 4",
+                "id": 4
             },
             {
                 "name": "Sync Ask",
-                "id": 9
+                "id": 6
             },
             {
-                "name": "Demux 4",
-                "id": 13
-            },
-            {
-                "name": "1then2",
-                "id": 21
+                "name": "Fight Choice",
+                "id": 19
             }
         ],
         "connections": [
@@ -1408,94 +939,42 @@
                 },
                 "source_port": "",
                 "target": {
-                    "name": "'fight;flee'",
-                    "id": 7
+                    "name": "Fight Choice",
+                    "id": 19
                 },
-                "target_port": "\u237a"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "'fight;flee'",
-                    "id": 7
-                },
-                "source_port": "\u237a",
-                "target": {
-                    "name": "1then2",
-                    "id": 21
-                },
-                "target_port": "1"
+                "target_port": ""
             },
             {
                 "dir": 1,
                 "source": {
                     "name": "Sync Ask",
-                    "id": 9
+                    "id": 6
                 },
                 "source_port": "",
                 "target": {
-                    "name": "1then2",
-                    "id": 21
-                },
-                "target_port": "2"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "1then2",
-                    "id": 21
-                },
-                "source_port": "1",
-                "target": {
                     "name": "Demux 4",
-                    "id": 13
+                    "id": 4
                 },
-                "target_port": "menu"
+                "target_port": ""
             },
             {
                 "dir": 1,
                 "source": {
-                    "name": "1then2",
-                    "id": 21
+                    "name": "Fight Choice",
+                    "id": 19
                 },
-                "source_port": "2",
-                "target": {
-                    "name": "Demux 4",
-                    "id": 13
-                },
-                "target_port": "choice"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "'fight;flee'",
-                    "id": 7
-                },
-                "source_port": "\u237a",
+                "source_port": "",
                 "target": {
                     "name": "Sync Ask",
-                    "id": 9
+                    "id": 6
                 },
                 "target_port": ""
             },
             {
                 "dir": 2,
                 "source": {
-                    "name": "Demux 4",
-                    "id": 13
-                },
-                "source_port": "\u2717",
-                "target": {
-                    "name": "",
-                    "id": 0
-                },
-                "target_port": "\u2717"
-            },
-            {
-                "dir": 2,
-                "source": {
                     "name": "Sync Ask",
-                    "id": 9
+                    "id": 6
                 },
                 "source_port": "\u2717",
                 "target": {
@@ -1508,7 +987,7 @@
                 "dir": 2,
                 "source": {
                     "name": "Demux 4",
-                    "id": 13
+                    "id": 4
                 },
                 "source_port": "2",
                 "target": {
@@ -1521,7 +1000,7 @@
                 "dir": 2,
                 "source": {
                     "name": "Demux 4",
-                    "id": 13
+                    "id": 4
                 },
                 "source_port": "1",
                 "target": {
@@ -1529,6 +1008,32 @@
                     "id": 0
                 },
                 "target_port": "fight"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Demux 4",
+                    "id": 4
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Fight Choice",
+                    "id": 19
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
             }
         ]
     },
@@ -1772,20 +1277,16 @@
         "name": "Win Ask",
         "children": [
             {
-                "name": "'go home;continue'",
-                "id": 7
+                "name": "Demux 4",
+                "id": 4
             },
             {
                 "name": "Sync Ask",
-                "id": 9
+                "id": 6
             },
             {
-                "name": "Demux 4",
-                "id": 13
-            },
-            {
-                "name": "1then2",
-                "id": 21
+                "name": "Win Choice",
+                "id": 19
             }
         ],
         "connections": [
@@ -1797,94 +1298,42 @@
                 },
                 "source_port": "",
                 "target": {
-                    "name": "'go home;continue'",
-                    "id": 7
+                    "name": "Win Choice",
+                    "id": 19
                 },
-                "target_port": "\u237a"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "'go home;continue'",
-                    "id": 7
-                },
-                "source_port": "\u237a",
-                "target": {
-                    "name": "1then2",
-                    "id": 21
-                },
-                "target_port": "1"
+                "target_port": ""
             },
             {
                 "dir": 1,
                 "source": {
                     "name": "Sync Ask",
-                    "id": 9
+                    "id": 6
                 },
                 "source_port": "",
                 "target": {
-                    "name": "1then2",
-                    "id": 21
-                },
-                "target_port": "2"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "1then2",
-                    "id": 21
-                },
-                "source_port": "1",
-                "target": {
                     "name": "Demux 4",
-                    "id": 13
+                    "id": 4
                 },
-                "target_port": "menu"
+                "target_port": ""
             },
             {
                 "dir": 1,
                 "source": {
-                    "name": "1then2",
-                    "id": 21
+                    "name": "Win Choice",
+                    "id": 19
                 },
-                "source_port": "2",
-                "target": {
-                    "name": "Demux 4",
-                    "id": 13
-                },
-                "target_port": "choice"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "'go home;continue'",
-                    "id": 7
-                },
-                "source_port": "\u237a",
+                "source_port": "",
                 "target": {
                     "name": "Sync Ask",
-                    "id": 9
+                    "id": 6
                 },
                 "target_port": ""
             },
             {
                 "dir": 2,
                 "source": {
-                    "name": "Demux 4",
-                    "id": 13
-                },
-                "source_port": "\u2717",
-                "target": {
-                    "name": "",
-                    "id": 0
-                },
-                "target_port": "\u2717"
-            },
-            {
-                "dir": 2,
-                "source": {
                     "name": "Sync Ask",
-                    "id": 9
+                    "id": 6
                 },
                 "source_port": "\u2717",
                 "target": {
@@ -1897,7 +1346,7 @@
                 "dir": 2,
                 "source": {
                     "name": "Demux 4",
-                    "id": 13
+                    "id": 4
                 },
                 "source_port": "2",
                 "target": {
@@ -1910,7 +1359,7 @@
                 "dir": 2,
                 "source": {
                     "name": "Demux 4",
-                    "id": 13
+                    "id": 4
                 },
                 "source_port": "1",
                 "target": {
@@ -1918,6 +1367,32 @@
                     "id": 0
                 },
                 "target_port": "quit"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Demux 4",
+                    "id": 4
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Win Choice",
+                    "id": 19
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
             }
         ]
     },
@@ -1977,20 +1452,16 @@
         "name": "Die Ask",
         "children": [
             {
-                "name": "'quit;restart'",
-                "id": 7
+                "name": "Demux 4",
+                "id": 4
             },
             {
                 "name": "Sync Ask",
-                "id": 9
+                "id": 6
             },
             {
-                "name": "Demux 4",
-                "id": 13
-            },
-            {
-                "name": "1then2",
-                "id": 21
+                "name": "Die Choice",
+                "id": 19
             }
         ],
         "connections": [
@@ -2002,94 +1473,42 @@
                 },
                 "source_port": "",
                 "target": {
-                    "name": "'quit;restart'",
-                    "id": 7
+                    "name": "Die Choice",
+                    "id": 19
                 },
-                "target_port": "\u237a"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "'quit;restart'",
-                    "id": 7
-                },
-                "source_port": "\u237a",
-                "target": {
-                    "name": "1then2",
-                    "id": 21
-                },
-                "target_port": "1"
+                "target_port": ""
             },
             {
                 "dir": 1,
                 "source": {
                     "name": "Sync Ask",
-                    "id": 9
+                    "id": 6
                 },
                 "source_port": "",
                 "target": {
-                    "name": "1then2",
-                    "id": 21
-                },
-                "target_port": "2"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "1then2",
-                    "id": 21
-                },
-                "source_port": "1",
-                "target": {
                     "name": "Demux 4",
-                    "id": 13
+                    "id": 4
                 },
-                "target_port": "menu"
+                "target_port": ""
             },
             {
                 "dir": 1,
                 "source": {
-                    "name": "1then2",
-                    "id": 21
+                    "name": "Die Choice",
+                    "id": 19
                 },
-                "source_port": "2",
-                "target": {
-                    "name": "Demux 4",
-                    "id": 13
-                },
-                "target_port": "choice"
-            },
-            {
-                "dir": 1,
-                "source": {
-                    "name": "'quit;restart'",
-                    "id": 7
-                },
-                "source_port": "\u237a",
+                "source_port": "",
                 "target": {
                     "name": "Sync Ask",
-                    "id": 9
+                    "id": 6
                 },
                 "target_port": ""
             },
             {
                 "dir": 2,
                 "source": {
-                    "name": "Demux 4",
-                    "id": 13
-                },
-                "source_port": "\u2717",
-                "target": {
-                    "name": "",
-                    "id": 0
-                },
-                "target_port": "\u2717"
-            },
-            {
-                "dir": 2,
-                "source": {
                     "name": "Sync Ask",
-                    "id": 9
+                    "id": 6
                 },
                 "source_port": "\u2717",
                 "target": {
@@ -2102,7 +1521,7 @@
                 "dir": 2,
                 "source": {
                     "name": "Demux 4",
-                    "id": 13
+                    "id": 4
                 },
                 "source_port": "2",
                 "target": {
@@ -2115,7 +1534,7 @@
                 "dir": 2,
                 "source": {
                     "name": "Demux 4",
-                    "id": 13
+                    "id": 4
                 },
                 "source_port": "1",
                 "target": {
@@ -2123,20 +1542,285 @@
                     "id": 0
                 },
                 "target_port": "quit"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Demux 4",
+                    "id": 4
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Die Choice",
+                    "id": 19
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
             }
         ]
     },
     {
         "file": "dc0d.drawio",
-        "name": "Page-20",
+        "name": "Shop",
         "children": [
             {
-                "name": "Damage Player\u2237<br>p.ok -= N<br>\u21d2",
-                "id": 2
+                "name": "Shop Menu",
+                "id": 5
+            },
+            {
+                "name": "updgrade\u2237<br>p.pwr += damage_sword<br>p.wallet -= cost_sword<br>\u21d2",
+                "id": 9
+            },
+            {
+                "name": "\u2a0d  p.wallet &gt;= cost_sword",
+                "id": 13
+            },
+            {
+                "name": "<font color=\"#cccccc\">1then2</font>",
+                "id": 18
             }
         ],
         "connections": [
-
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "",
+                "target": {
+                    "name": "\u2a0d  p.wallet &gt;= cost_sword",
+                    "id": 13
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "updgrade\u2237<br>p.pwr += damage_sword<br>p.wallet -= cost_sword<br>\u21d2",
+                    "id": 9
+                },
+                "source_port": "",
+                "target": {
+                    "name": "\u2a0d  p.wallet &gt;= cost_sword",
+                    "id": 13
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "Shop Menu",
+                    "id": 5
+                },
+                "source_port": "buy",
+                "target": {
+                    "name": "updgrade\u2237<br>p.pwr += damage_sword<br>p.wallet -= cost_sword<br>\u21d2",
+                    "id": 9
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "<font color=\"#cccccc\">1then2</font>",
+                    "id": 18
+                },
+                "source_port": "1",
+                "target": {
+                    "name": "Shop Menu",
+                    "id": 5
+                },
+                "target_port": "buy?"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "<font color=\"#cccccc\">1then2</font>",
+                    "id": 18
+                },
+                "source_port": "2",
+                "target": {
+                    "name": "Shop Menu",
+                    "id": 5
+                },
+                "target_port": "ask"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "\u2a0d  p.wallet &gt;= cost_sword",
+                    "id": 13
+                },
+                "source_port": "",
+                "target": {
+                    "name": "<font color=\"#cccccc\">1then2</font>",
+                    "id": 18
+                },
+                "target_port": "1"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "\u2a0d  p.wallet &gt;= cost_sword",
+                    "id": 13
+                },
+                "source_port": "",
+                "target": {
+                    "name": "<font color=\"#cccccc\">1then2</font>",
+                    "id": 18
+                },
+                "target_port": "2"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Shop Menu",
+                    "id": 5
+                },
+                "source_port": "leave",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": ""
+            }
+        ]
+    },
+    {
+        "file": "dc0d.drawio",
+        "name": "Shop Menu",
+        "children": [
+            {
+                "name": "Demux 4",
+                "id": 4
+            },
+            {
+                "name": "Sync Ask",
+                "id": 6
+            },
+            {
+                "name": "Shop Choice",
+                "id": 19
+            }
+        ],
+        "connections": [
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "",
+                "target": {
+                    "name": "Shop Choice",
+                    "id": 19
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "Sync Ask",
+                    "id": 6
+                },
+                "source_port": "",
+                "target": {
+                    "name": "Demux 4",
+                    "id": 4
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "Shop Choice",
+                    "id": 19
+                },
+                "source_port": "",
+                "target": {
+                    "name": "Sync Ask",
+                    "id": 6
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Sync Ask",
+                    "id": 6
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Demux 4",
+                    "id": 4
+                },
+                "source_port": "2",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "leave"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Demux 4",
+                    "id": 4
+                },
+                "source_port": "1",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "buy"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Demux 4",
+                    "id": 4
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Shop Choice",
+                    "id": 19
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
+            }
         ]
     }
 ]
