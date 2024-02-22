@@ -17,7 +17,6 @@ dc0d: dc0d.drawio.json
 dc0d.drawio.json: dc0d.drawio transpile.drawio.json
 	$(D2J) dc0d.drawio
 	rm -f /tmp/dc0d.drawio.json
-	cp dc0d.drawio.json dc0d.drawio.1.json
 	node 0D/util/rmhtml.js dc0d.drawio.json >/tmp/dc0d.drawio.json
 	cp /tmp/dc0d.drawio.json ./dc0d.drawio.json
 
@@ -28,5 +27,5 @@ transpile.drawio.json: $(LIBSRC)/transpile.drawio
 clean:
 	rm -rf dc0d dc0d.dSYM
 	rm -rf *.json
-
+	rm -rf *~
 

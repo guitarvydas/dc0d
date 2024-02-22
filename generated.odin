@@ -131,7 +131,7 @@ Collect :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
 }
 generated_components_to_include_in_project :: proc (leaves: ^[dynamic]zd.Leaf_Template) {
     zd.append_leaf (leaves, zd.Leaf_Template { name = "init", instantiate = init })
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "Rest", instantiate = Rest })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "Do Rest", instantiate = Rest })
     zd.append_leaf (leaves, zd.Leaf_Template { name = "updgrade", instantiate = updgrade })
     zd.append_leaf (leaves, zd.Leaf_Template { name = "pred_0", instantiate = pred_0 })
     zd.append_leaf (leaves, zd.Leaf_Template { name = "Generate Monster", instantiate = Generate_Monster })

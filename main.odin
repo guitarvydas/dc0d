@@ -46,8 +46,42 @@ next :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
 
 components_to_include_in_project :: proc (leaves: ^[dynamic]zd.Leaf_Template) {
     generated_components_to_include_in_project (leaves)
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "Game Choice", instantiate = Game_Choice })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "Shop Choice", instantiate = Shop_Choice })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "Fight Choice", instantiate = Fight_Choice })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "Win Choice", instantiate = Win_Choice })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "Die Choice", instantiate = Die_Choice })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "Demux 4", instantiate = demux4 })
 }
 
 int2string :: proc (i : int) -> string {
     return fmt.aprintf ("%d", i)
 }
+
+///
+
+///
+
+demux4 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
+    handle :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
+	// incoming datum is a string, containing a digit 1-4, pulse the corresponding output
+	pulse := zd.new_datum_bang ()
+	switch msg.datum.repr (msg.datum) {
+	case "1":
+	    zd.send (eh, "1", pulse, msg)
+	case "2":
+	    zd.send (eh, "2", pulse, msg)
+	case "3":
+	    zd.send (eh, "3", pulse, msg)
+	case "4":
+	    zd.send (eh, "4", pulse, msg)
+        case:
+	    fmt.assertf (false, "fatal internal error in demux4")
+	}
+    }
+    
+    name_with_id := std.gensym("Win_Choice")
+    return zd.make_leaf (name_with_id, owner, nil, handle)
+}
+
+
