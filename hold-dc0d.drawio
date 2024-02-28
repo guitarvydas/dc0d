@@ -1,10 +1,10 @@
-<mxfile host="Electron" modified="2024-02-28T11:51:09.009Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="yTF2lrMJ1bajzyyGpJ3E" version="23.1.5" type="device" pages="17">
+<mxfile host="Electron" modified="2024-02-25T10:18:42.592Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="Z0w6mPqUcNgPcBmW7RQQ" version="23.1.5" type="device" pages="17">
   <diagram name="main" id="4NC5C235ceEbJDFCXTHk">
     <mxGraphModel dx="1147" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="vt2uHKQi6QLiGVlnmY2d-5" value="Game" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#001DBC;fillColor=#0050ef;fontColor=#ffffff;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
+        <mxCell id="vt2uHKQi6QLiGVlnmY2d-5" value="Game" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#001DBC;fillColor=#0050ef;fontColor=#ffffff;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="220" y="110" width="140" height="90" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -43,7 +43,7 @@
         <mxCell id="yTE4_9pnOl3mThRp0SYr-2" value="" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;fontStyle=1;glass=0;sketch=0;fontSize=12;points=[[0,0.5,0,0,0],[0.5,0,0,0,0],[0.5,1,0,0,0],[1,0.5,0,0,0]];shadow=1;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="1360" y="280" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="yTE4_9pnOl3mThRp0SYr-3" value="činit&#xa;p.ok = max_recharge&#xa;p.wallet = 0&#xa;p.pwr = 4&#xa;ndays = 0&#xa;⇒" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
+        <mxCell id="yTE4_9pnOl3mThRp0SYr-3" value="ė&lt;sub style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 7px;&quot;&gt;init&lt;/font&gt;&lt;/sub&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;p.ok = max_recharge&lt;br&gt;p.wallet = 0&lt;br&gt;p.pwr = 4&lt;br&gt;ndays = 0&lt;br&gt;⇒" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="240" y="32.5" width="110" height="100" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -281,11 +281,11 @@
     </mxGraphModel>
   </diagram>
   <diagram id="BwRgrKvQ6a9G1BlAH7uV" name="Rest">
-    <mxGraphModel dx="1147" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1148" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Is2-R2kpy-hobnmmWNnx-1" value="čRest&#xa;p.ok = max_recharge&#xa;ndays += 1&#xa;zd.send (eh=eh, port=&quot;&quot;, datum=zd.new_datum_string (fmt.aprintf (&quot;p=%v m=%v ndays=%v\n&quot;, p, m, ndays)), causingMessage=msg)&#xa;⇒" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
+        <mxCell id="Is2-R2kpy-hobnmmWNnx-1" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;ė&lt;sub style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 7px;&quot;&gt;Rest&lt;/font&gt;&lt;/sub&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;p.ok = max_recharge&lt;br&gt;ndays += 1&lt;br&gt;zd.send (eh=eh, port=&quot;&quot;, datum=zd.new_datum_string (fmt.aprintf (&quot;p=%v m=%v ndays=%v\n&quot;, p, m, ndays)), causingMessage=msg)&lt;br&gt;⇒" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="150" y="50" width="540" height="100" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -312,11 +312,11 @@
     </mxGraphModel>
   </diagram>
   <diagram id="BJ6wE3hYfXBuRbT3nKzj" name="Sync Ask">
-    <mxGraphModel dx="1147" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1148" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="q-4Cymq0sA81cNwcfTJ8-1" value="$ dialog" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=1;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#666666;fillColor=#FFFFFF;fontColor=#333333;connectable=0;gradientColor=#FFF2CC;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
+        <mxCell id="q-4Cymq0sA81cNwcfTJ8-1" value="$ dialog" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=1;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#666666;fillColor=#FFFFFF;fontColor=#333333;connectable=0;gradientColor=#FFF2CC;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="200" y="155" width="110" height="90" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -352,7 +352,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="VWlQRYWMBtL-Ghe0f9An" name="Game Ask">
-    <mxGraphModel dx="1147" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1148" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -473,7 +473,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="1uQnfE990I5NZO_FizNN" name="Adventure">
-    <mxGraphModel dx="1147" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1148" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -483,7 +483,7 @@
         <mxCell id="JvD7f8_dgyDdF6x91nGS-2" value="die" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;glass=0;sketch=0;fontSize=12;points=[[0,0.5,0,0,0],[0.5,0,0,0,0],[0.5,1,0,0,0],[1,0.5,0,0,0]];shadow=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="910" y="265" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="0pWqwljlIL3x07VSlyKH-1" value="čadventure&#xa;spoils := 0&#xa;⇒" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
+        <mxCell id="0pWqwljlIL3x07VSlyKH-1" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;ė&lt;sub style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 7px;&quot;&gt;adventure&lt;/font&gt;&lt;/sub&gt;&lt;br&gt;&lt;/span&gt;spoils := 0&lt;br&gt;⇒" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="130" y="160" width="201" height="79" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -494,7 +494,7 @@
         <mxCell id="0pWqwljlIL3x07VSlyKH-3" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;points=[[0,0.5,0,0,0],[1,0.5,0,0,0]];fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;arcSize=50;fontFamily=Helvetica;fontSize=11;" parent="0pWqwljlIL3x07VSlyKH-1" vertex="1">
           <mxGeometry x="180" y="40" width="36" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="0pWqwljlIL3x07VSlyKH-4" value="čGenerate_Monster&#xa;m.wallet = cost_sword&#xa;m.ok = max_recharge&#xa;m.pwr = damage_sword&#xa;⇒" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
+        <mxCell id="0pWqwljlIL3x07VSlyKH-4" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;ė&lt;sub style=&quot;border-color: var(--border-color); font-weight: 400;&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 7px;&quot;&gt;Generate_Monster&lt;/font&gt;&lt;/sub&gt;&lt;br&gt;&lt;/b&gt;m.wallet = cost_sword&lt;br&gt;m.ok = max_recharge&lt;br&gt;m.pwr = damage_sword&lt;br&gt;⇒" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="420" y="160" width="201" height="79" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -550,7 +550,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ZtRBaOAZwNjHr-zREfEZ" name="Fight">
-    <mxGraphModel dx="1147" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1148" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -590,7 +590,7 @@
         <mxCell id="nBppszs7yo6WzvxS4Usf-13" value="" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;glass=0;sketch=0;fontSize=12;points=[[0,0.5,0,0,0],[0.5,0,0,0,0],[0.5,1,0,0,0],[1,0.5,0,0,0]];shadow=1;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="40" y="99.5" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="HCO09wU8tLFzGg3Y4e5y-1" value="čdamage_player&#xa;p.ok -= msg.datum.data.(int))&#xa;⇒" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
+        <mxCell id="HCO09wU8tLFzGg3Y4e5y-1" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;ė&lt;sub style=&quot;font-weight: 400; border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 7px;&quot;&gt;datamge_player&lt;/font&gt;&lt;/sub&gt;&lt;br&gt;&lt;/span&gt;p.ok -= msg.datum.data.(int))&lt;br&gt;⇒" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="450" y="70" width="140" height="79" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -601,7 +601,7 @@
         <mxCell id="HCO09wU8tLFzGg3Y4e5y-3" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;points=[[0,0.5,0,0,0],[1,0.5,0,0,0]];fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;arcSize=50;fontFamily=Helvetica;fontSize=11;" parent="HCO09wU8tLFzGg3Y4e5y-1" vertex="1">
           <mxGeometry x="120" y="40" width="36" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="HCO09wU8tLFzGg3Y4e5y-7" value="čdamage_monster&#xa;m.ok -= msg.datum.data.(int))&#xa;⇒" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
+        <mxCell id="HCO09wU8tLFzGg3Y4e5y-7" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;ė&lt;sub style=&quot;font-weight: 400; border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 7px;&quot;&gt;damage_monsae&lt;/font&gt;&lt;/sub&gt;&lt;br&gt;&lt;/span&gt;m.ok -= msg.datum.data.(int))&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;⇒" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="450" y="160" width="140" height="79" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -668,7 +668,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="baMhp7UbyJNVE-6et39n" name="Fight Auto">
-    <mxGraphModel dx="1147" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1148" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -701,7 +701,7 @@
         <mxCell id="Zk9wl8dVzja3_shhL5-s-3" value="win" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontStyle=1;glass=0;sketch=0;fontSize=12;points=[[0,0.5,0,0,0],[0.5,0,0,0,0],[0.5,1,0,0,0],[1,0.5,0,0,0]];shadow=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="800" y="220" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="r85lq4yV0edrCqY_6-h--1" value="λf1 p.ok == 0" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=middle;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;align=center;spacingLeft=0;" parent="1" vertex="1">
+        <mxCell id="r85lq4yV0edrCqY_6-h--1" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;λ&lt;/span&gt;&lt;sub style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 7px;&quot;&gt;f1&amp;nbsp;&lt;/font&gt;&lt;/sub&gt;&lt;/span&gt;p.ok == 0" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=middle;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;align=center;spacingLeft=0;" parent="1" vertex="1">
           <mxGeometry x="280" y="50" width="200" height="97.5" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -715,7 +715,7 @@
         <mxCell id="r85lq4yV0edrCqY_6-h--4" value="no" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;points=[[0,0.5,0,0,0],[1,0.5,0,0,0]];fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;arcSize=50;fontFamily=Helvetica;fontSize=11;" parent="r85lq4yV0edrCqY_6-h--1" vertex="1">
           <mxGeometry x="180" y="57.5" width="37.38" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="r85lq4yV0edrCqY_6-h--5" value="λf2 m.ok == 0" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=middle;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;align=center;spacingLeft=0;" parent="1" vertex="1">
+        <mxCell id="r85lq4yV0edrCqY_6-h--5" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;λ&lt;sub style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 7px;&quot;&gt;f2&lt;/font&gt;&lt;/sub&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/span&gt;m.ok == 0" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=middle;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;align=center;spacingLeft=0;" parent="1" vertex="1">
           <mxGeometry x="290" y="200" width="200" height="97.5" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -807,7 +807,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Fight Ask" id="s5riqlwgbC-PCiOFnn1F">
-    <mxGraphModel dx="1147" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1148" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="QL8D68SudPSxZMdX8HRx-0" />
         <mxCell id="QL8D68SudPSxZMdX8HRx-1" parent="QL8D68SudPSxZMdX8HRx-0" />
@@ -916,7 +916,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="SqLB4T7aRpz7NMkWDP3n" name="Fight Step">
-    <mxGraphModel dx="1147" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1148" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -940,7 +940,7 @@
         <mxCell id="4njE57OFEgob61apdJ7U-5" value="2" style="rounded=1;whiteSpace=wrap;sketch=0;points=[[0,0.5,0,0,0],[1,0.5,0,0,0]];fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;arcSize=50;fontFamily=Helvetica;fontSize=11;" parent="4njE57OFEgob61apdJ7U-2" vertex="1">
           <mxGeometry x="110" y="67.5" width="35.25" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="B6XFnBLbJeg4wfJgJecb-1" value="λf3 m.ok - p.pwr &lt;= 0" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=middle;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;align=center;spacingLeft=0;" parent="1" vertex="1">
+        <mxCell id="B6XFnBLbJeg4wfJgJecb-1" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;λ&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;sub&gt;&lt;font style=&quot;font-size: 7px;&quot;&gt;f3&lt;/font&gt;&lt;/sub&gt;&lt;/span&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;&lt;/b&gt;m.ok - p.pwr &amp;lt;= 0" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=middle;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;align=center;spacingLeft=0;" parent="1" vertex="1">
           <mxGeometry x="440" y="120" width="200" height="90" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -972,7 +972,7 @@
         <mxCell id="bg963otBH9Bql90VA6nB-6" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="B6XFnBLbJeg4wfJgJecb-3" target="bg963otBH9Bql90VA6nB-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fJWkmRR2kpsGt8ywvfFv-1" value="čhitmonster&#xa;zd.send (eh, &quot;&quot;, zd.new_datum_int (p.pwr), msg)" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
+        <mxCell id="fJWkmRR2kpsGt8ywvfFv-1" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b&gt;ė&lt;/b&gt;&lt;sub style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 7px;&quot;&gt;hitmonster&lt;/font&gt;&lt;/sub&gt;&lt;br&gt;&lt;/span&gt;zd.send (eh, &quot;&quot;, zd.new_datum_int (p.pwr), msg)" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="460" y="280" width="201" height="79" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -989,7 +989,7 @@
         <mxCell id="fJWkmRR2kpsGt8ywvfFv-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="fJWkmRR2kpsGt8ywvfFv-3" target="bg963otBH9Bql90VA6nB-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fJWkmRR2kpsGt8ywvfFv-6" value="λf4 p.ok - m.pwr &lt;= 0" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=middle;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;align=center;spacingLeft=0;" parent="1" vertex="1">
+        <mxCell id="fJWkmRR2kpsGt8ywvfFv-6" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;font-weight: bold; border-color: var(--border-color);&quot;&gt;λ&lt;/b&gt;&lt;sub style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 7px;&quot;&gt;f4&lt;/font&gt;&lt;/sub&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/span&gt;p.ok - m.pwr &amp;lt;= 0" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=middle;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;align=center;spacingLeft=0;" parent="1" vertex="1">
           <mxGeometry x="441" y="400" width="200" height="90" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -1003,7 +1003,7 @@
         <mxCell id="fJWkmRR2kpsGt8ywvfFv-9" value="no" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;points=[[0,0.5,0,0,0],[1,0.5,0,0,0]];fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;arcSize=50;fontFamily=Helvetica;fontSize=11;" parent="fJWkmRR2kpsGt8ywvfFv-6" vertex="1">
           <mxGeometry x="81.30999999999995" y="80" width="37.38" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="fJWkmRR2kpsGt8ywvfFv-10" value="čhitplayer&#xa;zd.send (eh, &quot;&quot;, zd.new_datum_int (m.pwr), msg)" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
+        <mxCell id="fJWkmRR2kpsGt8ywvfFv-10" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;ė&lt;sub style=&quot;border-color: var(--border-color); font-weight: 400;&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 7px;&quot;&gt;hitplayer&lt;/font&gt;&lt;/sub&gt;&lt;br&gt;&lt;/b&gt;zd.send (eh, &quot;&quot;, zd.new_datum_int (m.pwr), msg)" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="460" y="560" width="201" height="79" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -1035,7 +1035,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="lCQ438PF5Go_1pBq7Y9L" name="Flee">
-    <mxGraphModel dx="1147" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1148" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1059,7 +1059,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="mYgc-kxwz_Tv8G40Qfcp-1" value="čCollect&#xa;p.wallet += m.wallet&#xa;m.wallet = 0&#xa;⇒" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
+        <mxCell id="mYgc-kxwz_Tv8G40Qfcp-1" value="ė&lt;sub style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 7px;&quot;&gt;Collect&lt;/font&gt;&lt;/sub&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;p.wallet += m.wallet&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;m.wallet = 0&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;⇒" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="200" y="160" width="140" height="79" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -1109,7 +1109,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Win Ask" id="iars11NQtOUmC7zoUrpM">
-    <mxGraphModel dx="1147" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1148" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="rSP_QcNvyjtTLqlun007-0" />
         <mxCell id="rSP_QcNvyjtTLqlun007-1" parent="rSP_QcNvyjtTLqlun007-0" />
@@ -1218,7 +1218,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="yb9Qey2gcOPbfKpYEIfd" name="Die">
-    <mxGraphModel dx="1147" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1148" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1260,7 +1260,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="hhLaBSgqT6sFI6MZe0Dc" name="Die Ask">
-    <mxGraphModel dx="1147" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1148" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1369,11 +1369,11 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Shop" id="QDbHefg-SmZiomg3twYk">
-    <mxGraphModel dx="1147" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1148" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="AwwWNjJ4GZUsS3IAEiCU-0" />
         <mxCell id="AwwWNjJ4GZUsS3IAEiCU-1" parent="AwwWNjJ4GZUsS3IAEiCU-0" />
-        <mxCell id="AwwWNjJ4GZUsS3IAEiCU-2" value="čupgrade&#xa;p.pwr += damage_sword&#xa;p.wallet -= cost_sword&#xa;⇒" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="AwwWNjJ4GZUsS3IAEiCU-1" vertex="1">
+        <mxCell id="AwwWNjJ4GZUsS3IAEiCU-2" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;ė&lt;sub style=&quot;font-weight: 400; border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 7px;&quot;&gt;upgrade&lt;/font&gt;&lt;/sub&gt;&lt;br&gt;&lt;/span&gt;p.pwr += damage_sword&lt;br&gt;p.wallet -= cost_sword&lt;br&gt;⇒" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;" parent="AwwWNjJ4GZUsS3IAEiCU-1" vertex="1">
           <mxGeometry x="850" y="81" width="201" height="79" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>
@@ -1423,7 +1423,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="AwwWNjJ4GZUsS3IAEiCU-13" value="λf0 p.wallet &gt;= cost_sword" style="rounded=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;align=center;spacingLeft=0;" parent="AwwWNjJ4GZUsS3IAEiCU-1" vertex="1">
+        <mxCell id="AwwWNjJ4GZUsS3IAEiCU-13" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;λ&lt;sub style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 7px;&quot;&gt;f0&lt;/font&gt;&lt;/sub&gt;&lt;/span&gt;&lt;/span&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;p.wallet &amp;gt;= cost_sword" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;container=1;recursiveResize=0;verticalAlign=top;arcSize=6;fontStyle=0;autosize=0;points=[];absoluteArcSize=1;shadow=1;strokeColor=#d6b656;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=11;align=center;spacingLeft=0;" parent="AwwWNjJ4GZUsS3IAEiCU-1" vertex="1">
           <mxGeometry x="140" y="115.5" width="170" height="60" as="geometry">
             <mxRectangle x="-98" y="-1230" width="99" height="26" as="alternateBounds" />
           </mxGeometry>

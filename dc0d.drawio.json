@@ -46,7 +46,7 @@
                 "id": 2
             },
             {
-                "name": "init\u2237<br>p.ok = max_recharge<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>\u21d2",
+                "name": "\u0117<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">init</font></sub><br>p.ok = max_recharge<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>\u21d2",
                 "id": 4
             },
             {
@@ -83,7 +83,7 @@
                 },
                 "source_port": "cold start",
                 "target": {
-                    "name": "init\u2237<br>p.ok = max_recharge<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>\u21d2",
+                    "name": "\u0117<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">init</font></sub><br>p.ok = max_recharge<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>\u21d2",
                     "id": 4
                 },
                 "target_port": ""
@@ -195,7 +195,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "init\u2237<br>p.ok = max_recharge<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>\u21d2",
+                    "name": "\u0117<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">init</font></sub><br>p.ok = max_recharge<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>\u21d2",
                     "id": 4
                 },
                 "source_port": "",
@@ -226,7 +226,7 @@
                 },
                 "source_port": "restart",
                 "target": {
-                    "name": "init\u2237<br>p.ok = max_recharge<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>\u21d2",
+                    "name": "\u0117<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">init</font></sub><br>p.ok = max_recharge<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>\u21d2",
                     "id": 4
                 },
                 "target_port": ""
@@ -290,7 +290,7 @@
         "name": "Rest",
         "children": [
             {
-                "name": "Do Rest\u2237<br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)<br>\u21d2",
+                "name": "\u0117<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">Rest</font></sub><br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)<br>\u21d2",
                 "id": 3
             }
         ],
@@ -303,7 +303,7 @@
                 },
                 "source_port": "",
                 "target": {
-                    "name": "Do Rest\u2237<br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)<br>\u21d2",
+                    "name": "\u0117<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">Rest</font></sub><br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)<br>\u21d2",
                     "id": 3
                 },
                 "target_port": ""
@@ -311,7 +311,7 @@
             {
                 "dir": 2,
                 "source": {
-                    "name": "Do Rest\u2237<br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)<br>\u21d2",
+                    "name": "\u0117<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">Rest</font></sub><br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\\n\", p, m, ndays)), causingMessage=msg)<br>\u21d2",
                     "id": 3
                 },
                 "source_port": "",
@@ -529,11 +529,11 @@
         "name": "Adventure",
         "children": [
             {
-                "name": "Generate Monster\u2237<br>m.wallet = cost_sword<br>m.ok = max_recharge<br>m.pwr = damage_sword<br>\u21d2",
+                "name": "\u0117<sub style=\"border-color: var(--border-color); font-weight: 400;\"><font style=\"border-color: var(--border-color); font-size: 7px;\">Generate_Monster</font></sub><br>m.wallet = cost_sword<br>m.ok = max_recharge<br>m.pwr = damage_sword<br>\u21d2",
                 "id": 7
             },
             {
-                "name": "adventure\u2237<br>spoils := 0<br>\u21d2",
+                "name": "\u0117<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">adventure</font></sub><br>spoils := 0<br>\u21d2",
                 "id": 8
             },
             {
@@ -550,7 +550,7 @@
                 },
                 "source_port": "",
                 "target": {
-                    "name": "adventure\u2237<br>spoils := 0<br>\u21d2",
+                    "name": "\u0117<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">adventure</font></sub><br>spoils := 0<br>\u21d2",
                     "id": 8
                 },
                 "target_port": ""
@@ -558,7 +558,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "Generate Monster\u2237<br>m.wallet = cost_sword<br>m.ok = max_recharge<br>m.pwr = damage_sword<br>\u21d2",
+                    "name": "\u0117<sub style=\"border-color: var(--border-color); font-weight: 400;\"><font style=\"border-color: var(--border-color); font-size: 7px;\">Generate_Monster</font></sub><br>m.wallet = cost_sword<br>m.ok = max_recharge<br>m.pwr = damage_sword<br>\u21d2",
                     "id": 7
                 },
                 "source_port": "",
@@ -571,12 +571,12 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "adventure\u2237<br>spoils := 0<br>\u21d2",
+                    "name": "\u0117<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">adventure</font></sub><br>spoils := 0<br>\u21d2",
                     "id": 8
                 },
                 "source_port": "",
                 "target": {
-                    "name": "Generate Monster\u2237<br>m.wallet = cost_sword<br>m.ok = max_recharge<br>m.pwr = damage_sword<br>\u21d2",
+                    "name": "\u0117<sub style=\"border-color: var(--border-color); font-weight: 400;\"><font style=\"border-color: var(--border-color); font-size: 7px;\">Generate_Monster</font></sub><br>m.wallet = cost_sword<br>m.ok = max_recharge<br>m.pwr = damage_sword<br>\u21d2",
                     "id": 7
                 },
                 "target_port": ""
@@ -627,11 +627,11 @@
         "name": "Fight",
         "children": [
             {
-                "name": "Damage Player\u2237<br>p.ok -= msg.datum.data.(int))<br>\u21d2",
+                "name": "\u0117<sub style=\"font-weight: 400; border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">datamge_player</font></sub><br>p.ok -= msg.datum.data.(int))<br>\u21d2",
                 "id": 9
             },
             {
-                "name": "Damage Monster\u2237<br>m.ok -= msg.datum.data.(int))<br style=\"border-color: var(--border-color);\">\u21d2",
+                "name": "\u0117<sub style=\"font-weight: 400; border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">damage_monsae</font></sub><br>m.ok -= msg.datum.data.(int))<br style=\"border-color: var(--border-color);\">\u21d2",
                 "id": 12
             },
             {
@@ -661,7 +661,7 @@
                 },
                 "source_port": "hit monster",
                 "target": {
-                    "name": "Damage Monster\u2237<br>m.ok -= msg.datum.data.(int))<br style=\"border-color: var(--border-color);\">\u21d2",
+                    "name": "\u0117<sub style=\"font-weight: 400; border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">damage_monsae</font></sub><br>m.ok -= msg.datum.data.(int))<br style=\"border-color: var(--border-color);\">\u21d2",
                     "id": 12
                 },
                 "target_port": "N"
@@ -669,7 +669,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "Damage Player\u2237<br>p.ok -= msg.datum.data.(int))<br>\u21d2",
+                    "name": "\u0117<sub style=\"font-weight: 400; border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">datamge_player</font></sub><br>p.ok -= msg.datum.data.(int))<br>\u21d2",
                     "id": 9
                 },
                 "source_port": "",
@@ -682,7 +682,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "Damage Monster\u2237<br>m.ok -= msg.datum.data.(int))<br style=\"border-color: var(--border-color);\">\u21d2",
+                    "name": "\u0117<sub style=\"font-weight: 400; border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">damage_monsae</font></sub><br>m.ok -= msg.datum.data.(int))<br style=\"border-color: var(--border-color);\">\u21d2",
                     "id": 12
                 },
                 "source_port": "",
@@ -700,7 +700,7 @@
                 },
                 "source_port": "hit player",
                 "target": {
-                    "name": "Damage Player\u2237<br>p.ok -= msg.datum.data.(int))<br>\u21d2",
+                    "name": "\u0117<sub style=\"font-weight: 400; border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">datamge_player</font></sub><br>p.ok -= msg.datum.data.(int))<br>\u21d2",
                     "id": 9
                 },
                 "target_port": "N"
@@ -751,11 +751,11 @@
         "name": "Fight Auto",
         "children": [
             {
-                "name": "\u2047p.ok == 0",
+                "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f1 </font></sub>p.ok == 0",
                 "id": 11
             },
             {
-                "name": "\u2047m.ok == 0",
+                "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f2</font></sub> m.ok == 0",
                 "id": 15
             },
             {
@@ -776,7 +776,7 @@
                 },
                 "source_port": "",
                 "target": {
-                    "name": "\u2047p.ok == 0",
+                    "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f1 </font></sub>p.ok == 0",
                     "id": 11
                 },
                 "target_port": ""
@@ -797,7 +797,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "\u2047m.ok == 0",
+                    "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f2</font></sub> m.ok == 0",
                     "id": 15
                 },
                 "source_port": "no",
@@ -810,12 +810,12 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "\u2047p.ok == 0",
+                    "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f1 </font></sub>p.ok == 0",
                     "id": 11
                 },
                 "source_port": "no",
                 "target": {
-                    "name": "\u2047m.ok == 0",
+                    "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f2</font></sub> m.ok == 0",
                     "id": 15
                 },
                 "target_port": ""
@@ -823,7 +823,7 @@
             {
                 "dir": 2,
                 "source": {
-                    "name": "\u2047p.ok == 0",
+                    "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f1 </font></sub>p.ok == 0",
                     "id": 11
                 },
                 "source_port": "yes",
@@ -836,7 +836,7 @@
             {
                 "dir": 2,
                 "source": {
-                    "name": "\u2047m.ok == 0",
+                    "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f2</font></sub> m.ok == 0",
                     "id": 15
                 },
                 "source_port": "yes",
@@ -1042,7 +1042,7 @@
         "name": "Fight Step",
         "children": [
             {
-                "name": "\u2047m.ok - p.pwr &lt;= 0",
+                "name": "\u03bb<sub><font style=\"font-size: 7px;\">f3</font></sub> m.ok - p.pwr &lt;= 0",
                 "id": 8
             },
             {
@@ -1050,15 +1050,15 @@
                 "id": 14
             },
             {
-                "name": "hitmonster\u2237<br>zd.send (eh, \"\", zd.new_datum_int (p.pwr), msg)",
+                "name": "\u0117<sub style=\"\"><font style=\"font-size: 7px;\">hitmonster</font></sub><br>zd.send (eh, \"\", zd.new_datum_int (p.pwr), msg)",
                 "id": 18
             },
             {
-                "name": "hitplayer\u2237<br>zd.send (eh, \"\", zd.new_datum_int (m.pwr), msg)",
+                "name": "\u0117<sub style=\"border-color: var(--border-color); font-weight: 400;\"><font style=\"border-color: var(--border-color); font-size: 7px;\">hitplayer</font></sub><br>zd.send (eh, \"\", zd.new_datum_int (m.pwr), msg)",
                 "id": 21
             },
             {
-                "name": "\u2047p.ok - m.pwr &lt;= 0",
+                "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f4</font></sub> p.ok - m.pwr &lt;= 0",
                 "id": 23
             }
         ],
@@ -1079,12 +1079,12 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "\u2047m.ok - p.pwr &lt;= 0",
+                    "name": "\u03bb<sub><font style=\"font-size: 7px;\">f3</font></sub> m.ok - p.pwr &lt;= 0",
                     "id": 8
                 },
                 "source_port": "no",
                 "target": {
-                    "name": "hitmonster\u2237<br>zd.send (eh, \"\", zd.new_datum_int (p.pwr), msg)",
+                    "name": "\u0117<sub style=\"\"><font style=\"font-size: 7px;\">hitmonster</font></sub><br>zd.send (eh, \"\", zd.new_datum_int (p.pwr), msg)",
                     "id": 18
                 },
                 "target_port": ""
@@ -1097,7 +1097,7 @@
                 },
                 "source_port": "1",
                 "target": {
-                    "name": "\u2047m.ok - p.pwr &lt;= 0",
+                    "name": "\u03bb<sub><font style=\"font-size: 7px;\">f3</font></sub> m.ok - p.pwr &lt;= 0",
                     "id": 8
                 },
                 "target_port": ""
@@ -1105,12 +1105,12 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "\u2047p.ok - m.pwr &lt;= 0",
+                    "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f4</font></sub> p.ok - m.pwr &lt;= 0",
                     "id": 23
                 },
                 "source_port": "no",
                 "target": {
-                    "name": "hitplayer\u2237<br>zd.send (eh, \"\", zd.new_datum_int (m.pwr), msg)",
+                    "name": "\u0117<sub style=\"border-color: var(--border-color); font-weight: 400;\"><font style=\"border-color: var(--border-color); font-size: 7px;\">hitplayer</font></sub><br>zd.send (eh, \"\", zd.new_datum_int (m.pwr), msg)",
                     "id": 21
                 },
                 "target_port": ""
@@ -1123,7 +1123,7 @@
                 },
                 "source_port": "2",
                 "target": {
-                    "name": "\u2047p.ok - m.pwr &lt;= 0",
+                    "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f4</font></sub> p.ok - m.pwr &lt;= 0",
                     "id": 23
                 },
                 "target_port": ""
@@ -1131,7 +1131,7 @@
             {
                 "dir": 2,
                 "source": {
-                    "name": "\u2047m.ok - p.pwr &lt;= 0",
+                    "name": "\u03bb<sub><font style=\"font-size: 7px;\">f3</font></sub> m.ok - p.pwr &lt;= 0",
                     "id": 8
                 },
                 "source_port": "yes",
@@ -1144,7 +1144,7 @@
             {
                 "dir": 2,
                 "source": {
-                    "name": "hitmonster\u2237<br>zd.send (eh, \"\", zd.new_datum_int (p.pwr), msg)",
+                    "name": "\u0117<sub style=\"\"><font style=\"font-size: 7px;\">hitmonster</font></sub><br>zd.send (eh, \"\", zd.new_datum_int (p.pwr), msg)",
                     "id": 18
                 },
                 "source_port": "",
@@ -1157,7 +1157,7 @@
             {
                 "dir": 2,
                 "source": {
-                    "name": "\u2047p.ok - m.pwr &lt;= 0",
+                    "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f4</font></sub> p.ok - m.pwr &lt;= 0",
                     "id": 23
                 },
                 "source_port": "yes",
@@ -1170,7 +1170,7 @@
             {
                 "dir": 2,
                 "source": {
-                    "name": "hitplayer\u2237<br>zd.send (eh, \"\", zd.new_datum_int (m.pwr), msg)",
+                    "name": "\u0117<sub style=\"border-color: var(--border-color); font-weight: 400;\"><font style=\"border-color: var(--border-color); font-size: 7px;\">hitplayer</font></sub><br>zd.send (eh, \"\", zd.new_datum_int (m.pwr), msg)",
                     "id": 21
                 },
                 "source_port": "",
@@ -1213,7 +1213,7 @@
                 "id": 5
             },
             {
-                "name": "Collect\u2237<br>p.wallet += m.wallet<br>m.wallet = 0<br>\u21d2",
+                "name": "\u0117<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">Collect</font></sub><br style=\"border-color: var(--border-color);\">p.wallet += m.wallet<br style=\"border-color: var(--border-color);\">m.wallet = 0<br style=\"border-color: var(--border-color);\">\u21d2",
                 "id": 10
             }
         ],
@@ -1226,7 +1226,7 @@
                 },
                 "source_port": "",
                 "target": {
-                    "name": "Collect\u2237<br>p.wallet += m.wallet<br>m.wallet = 0<br>\u21d2",
+                    "name": "\u0117<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">Collect</font></sub><br style=\"border-color: var(--border-color);\">p.wallet += m.wallet<br style=\"border-color: var(--border-color);\">m.wallet = 0<br style=\"border-color: var(--border-color);\">\u21d2",
                     "id": 10
                 },
                 "target_port": ""
@@ -1234,7 +1234,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "Collect\u2237<br>p.wallet += m.wallet<br>m.wallet = 0<br>\u21d2",
+                    "name": "\u0117<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">Collect</font></sub><br style=\"border-color: var(--border-color);\">p.wallet += m.wallet<br style=\"border-color: var(--border-color);\">m.wallet = 0<br style=\"border-color: var(--border-color);\">\u21d2",
                     "id": 10
                 },
                 "source_port": "",
@@ -1580,11 +1580,11 @@
                 "id": 5
             },
             {
-                "name": "updgrade\u2237<br>p.pwr += damage_sword<br>p.wallet -= cost_sword<br>\u21d2",
+                "name": "\u0117<sub style=\"font-weight: 400; border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">upgrade</font></sub><br>p.pwr += damage_sword<br>p.wallet -= cost_sword<br>\u21d2",
                 "id": 9
             },
             {
-                "name": "\u2a0d  p.wallet &gt;= cost_sword",
+                "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f0</font></sub> p.wallet &gt;= cost_sword",
                 "id": 13
             },
             {
@@ -1601,7 +1601,7 @@
                 },
                 "source_port": "",
                 "target": {
-                    "name": "\u2a0d  p.wallet &gt;= cost_sword",
+                    "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f0</font></sub> p.wallet &gt;= cost_sword",
                     "id": 13
                 },
                 "target_port": ""
@@ -1609,12 +1609,12 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "updgrade\u2237<br>p.pwr += damage_sword<br>p.wallet -= cost_sword<br>\u21d2",
+                    "name": "\u0117<sub style=\"font-weight: 400; border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">upgrade</font></sub><br>p.pwr += damage_sword<br>p.wallet -= cost_sword<br>\u21d2",
                     "id": 9
                 },
                 "source_port": "",
                 "target": {
-                    "name": "\u2a0d  p.wallet &gt;= cost_sword",
+                    "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f0</font></sub> p.wallet &gt;= cost_sword",
                     "id": 13
                 },
                 "target_port": ""
@@ -1627,7 +1627,7 @@
                 },
                 "source_port": "buy",
                 "target": {
-                    "name": "updgrade\u2237<br>p.pwr += damage_sword<br>p.wallet -= cost_sword<br>\u21d2",
+                    "name": "\u0117<sub style=\"font-weight: 400; border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">upgrade</font></sub><br>p.pwr += damage_sword<br>p.wallet -= cost_sword<br>\u21d2",
                     "id": 9
                 },
                 "target_port": ""
@@ -1661,7 +1661,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "\u2a0d  p.wallet &gt;= cost_sword",
+                    "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f0</font></sub> p.wallet &gt;= cost_sword",
                     "id": 13
                 },
                 "source_port": "",
@@ -1674,7 +1674,7 @@
             {
                 "dir": 1,
                 "source": {
-                    "name": "\u2a0d  p.wallet &gt;= cost_sword",
+                    "name": "\u03bb<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">f0</font></sub> p.wallet &gt;= cost_sword",
                     "id": 13
                 },
                 "source_port": "",

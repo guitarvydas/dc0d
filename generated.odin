@@ -29,7 +29,7 @@ updgrade :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
     }
     return zd.make_leaf ("updgrade", owner, nil, handler)
 }
-pred_0 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
+f0 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
     handler :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
 	if (p.wallet >= cost_sword) {
             zd.send (eh=eh, port="yes", datum=zd.new_datum_bang (), causingMessage=msg)
@@ -69,7 +69,7 @@ Damage_Monster :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
     }
     return zd.make_leaf ("Damage Monster", owner, nil, handler)
 }
-pred_1 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
+f1 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
     handler :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
 	if (p.ok == 0) {
             zd.send (eh=eh, port="yes", datum=zd.new_datum_bang (), causingMessage=msg)
@@ -79,7 +79,7 @@ pred_1 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
     }
     return zd.make_leaf ("pred_1", owner, nil, handler)
 }
-pred_2 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
+f2 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
     handler :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
 	if (m.ok == 0) {
             zd.send (eh=eh, port="yes", datum=zd.new_datum_bang (), causingMessage=msg)
@@ -89,7 +89,7 @@ pred_2 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
     }
     return zd.make_leaf ("pred_2", owner, nil, handler)
 }
-pred_3 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
+f3 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
     handler :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
 	if (m.ok - p.pwr <= 0) {
             zd.send (eh=eh, port="yes", datum=zd.new_datum_bang (), causingMessage=msg)
@@ -111,7 +111,7 @@ hitplayer :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
     }
     return zd.make_leaf ("hitplayer", owner, nil, handler)
 }
-pred_4 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
+f4 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
     handler :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
 	if (p.ok - m.pwr <= 0) {
             zd.send (eh=eh, port="yes", datum=zd.new_datum_bang (), causingMessage=msg)
@@ -130,19 +130,21 @@ Collect :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
     return zd.make_leaf ("Collect", owner, nil, handler)
 }
 generated_components_to_include_in_project :: proc (leaves: ^[dynamic]zd.Leaf_Template) {
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "init", instantiate = init })
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "Do Rest", instantiate = Rest })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "ė<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">init</font></sub><br>p.ok = max_recharge<br>p.wallet = 0<br>p.pwr = 4<br>ndays = 0<br>⇒", instantiate = init })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "ė<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">Rest</font></sub><br>p.ok = max_recharge<br>ndays += 1<br>zd.send (eh=eh, port=\"\", datum=zd.new_datum_string (fmt.aprintf (\"p=%v m=%v ndays=%v\n\", p, m, ndays)), causingMessage=msg)<br>⇒", instantiate = Rest })
     zd.append_leaf (leaves, zd.Leaf_Template { name = "updgrade", instantiate = updgrade })
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "pred_0", instantiate = pred_0 })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "f0", instantiate = f0 })
     zd.append_leaf (leaves, zd.Leaf_Template { name = "Generate Monster", instantiate = Generate_Monster })
     zd.append_leaf (leaves, zd.Leaf_Template { name = "adventure", instantiate = adventure })
     zd.append_leaf (leaves, zd.Leaf_Template { name = "Damage Player", instantiate = Damage_Player })
     zd.append_leaf (leaves, zd.Leaf_Template { name = "Damage Monster", instantiate = Damage_Monster })
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "pred_1", instantiate = pred_1 })
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "pred_2", instantiate = pred_2 })
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "pred_3", instantiate = pred_3 })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "f1", instantiate = f1 })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "f2", instantiate = f2 })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "f3", instantiate = f3 })
     zd.append_leaf (leaves, zd.Leaf_Template { name = "hitmonster", instantiate = hitmonster })
     zd.append_leaf (leaves, zd.Leaf_Template { name = "hitplayer", instantiate = hitplayer })
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "pred_4", instantiate = pred_4 })
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "Collect", instantiate = Collect })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "f4", instantiate = f4 })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "ė<sub style=\"border-color: var(--border-color);\"><font style=\"border-color: var(--border-color); font-size: 7px;\">Collect</font></sub><br style=\"border-color: var(--border-color);\">p.wallet += m.wallet<br style=\"border-color: var(--border-color);\">m.wallet = 0<br style=\"border-color: var(--border-color);\">⇒", instantiate = Collect })
+
+
 }
