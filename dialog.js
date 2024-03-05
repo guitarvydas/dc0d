@@ -15,7 +15,10 @@ function pick (choices) {
 
 function main () {
     argv = require('yargs/yargs')(process.argv.slice(2)).argv;
-    console.log (argv);
+    console.error ();
+    console.error ();
+    console.error ("\033[101m>>> argv...", argv, "\033[0m");
+    console.error ();
     choices = argv._[1].split (';');
     n = pick (choices);
     while (n < 0 || n >= choices.length) {

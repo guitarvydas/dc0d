@@ -1,17 +1,16 @@
 LIBSRC=0D/odin/std
 ODIN_FLAGS ?= -debug -o:none
 D2J=0d/das2json/das2json
-GEN0DDIR=./gen0D
-GEN0D=${GEN0DDIR}/gen0d
+GEN0DDIR=../gen0D
 
 
 
-dev: clean generated.odin run
+dev: clean run
 
-run: dc0d transpile.drawio.json generated.odin
+run: dc0d transpile.drawio.json
 	./dc0d ! main dc0d.drawio $(LIBSRC)/transpile.drawio
 
-dc0d: dc0d.drawio.json
+dc0d: dc0d.drawio.json generated.odin
 	odin build . $(ODIN_FLAGS)
 
 dc0d.drawio.json: dc0d.drawio transpile.drawio.json
@@ -23,9 +22,17 @@ dc0d.drawio.json: dc0d.drawio transpile.drawio.json
 transpile.drawio.json: $(LIBSRC)/transpile.drawio
 	$(D2J) $(LIBSRC)/transpile.drawio
 
+generated.odin: dc0d.drawio
+	(cd $(GEN0DDIR) ; make -s >/tmp/gen.odin)
+	sed -e 's/___/dc0d/g' </tmp/gen.odin >generated.odin
+	rm -rf /tmp/gen.odin
 
 clean:
 	rm -rf dc0d dc0d.dSYM
 	rm -rf *.json
 	rm -rf *~
+	rm -rf generated.odin
+
+install-js-requires:
+	npm install yargs prompt-sync
 

@@ -1,6 +1,7 @@
 package dc0d
 
 import "core:fmt"
+import "core:math/rand"
 
 import zd "0d/odin"
 import "0d/odin/std"
@@ -46,12 +47,14 @@ next :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
 
 components_to_include_in_project :: proc (leaves: ^[dynamic]zd.Leaf_Template) {
     generated_components_to_include_in_project (leaves)
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "Game Choice", instantiate = Game_Choice })
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "Shop Choice", instantiate = Shop_Choice })
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "Fight Choice", instantiate = Fight_Choice })
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "Win Choice", instantiate = Win_Choice })
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "Die Choice", instantiate = Die_Choice })
     zd.append_leaf (leaves, zd.Leaf_Template { name = "Demux 4", instantiate = demux4 })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "Random", instantiate = random2 })
+    zd.append_leaf (leaves, std.string_constant ("adventure;shop;rest;quit"))
+    zd.append_leaf (leaves, std.string_constant ("fight;flee"))
+    zd.append_leaf (leaves, std.string_constant ("go home;continue"))
+    zd.append_leaf (leaves, std.string_constant ("quit;restart"))
+    zd.append_leaf (leaves, std.string_constant ("buy;leave"))
+    zd.append_leaf (leaves, std.string_constant ("leave"))
 }
 
 int2string :: proc (i : int) -> string {
@@ -80,8 +83,26 @@ demux4 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
 	}
     }
     
-    name_with_id := std.gensym("Win_Choice")
+    name_with_id := std.gensym("demux4")
     return zd.make_leaf (name_with_id, owner, nil, handle)
 }
 
-
+//
+random2 :: proc (name : string, owner : ^zd.Eh) -> ^zd.Eh {
+    handle :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
+	// incoming datum is a string, containing a digit 1-4, pulse the corresponding output
+	pulse := zd.new_datum_bang ()
+	data: [2]int = { 1, 2 }
+	switch rand.choice (data[:]) {
+	case 1:
+	    zd.send (eh, "1", pulse, msg)
+	case 2:
+	    zd.send (eh, "2", pulse, msg)
+        case:
+	    fmt.assertf (false, "fatal internal error in random")
+	}
+    }
+    
+    name_with_id := std.gensym("Random")
+    return zd.make_leaf (name_with_id, owner, nil, handle)
+}
