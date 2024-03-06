@@ -19,7 +19,7 @@ function main () {
     console.error ();
     console.error ("\033[101m>>> argv...", argv, "\033[0m");
     console.error ();
-    choices = argv._[1].split (';');
+    choices = argv._[0].split (';');
     n = pick (choices);
     while (n < 0 || n >= choices.length) {
 	n = console.log (`oops - choice out of range (1-${choices.length}) - pick again. `);
