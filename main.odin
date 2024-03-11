@@ -48,7 +48,7 @@ next :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
 components_to_include_in_project :: proc (leaves: ^[dynamic]zd.Leaf_Template) {
     generated_components_to_include_in_project (leaves)
     zd.append_leaf (leaves, zd.Leaf_Template { name = "Demux 4", instantiate = demux4 })
-    zd.append_leaf (leaves, zd.Leaf_Template { name = "Random", instantiate = random2 })
+    zd.append_leaf (leaves, zd.Leaf_Template { name = "Random", instantiate = random0d })
     zd.append_leaf (leaves, std.string_constant ("'adventure;shop;rest;quit'"))
     zd.append_leaf (leaves, std.string_constant ("'fight;flee'"))
     zd.append_leaf (leaves, std.string_constant ("'go home;continue'"))
@@ -60,31 +60,26 @@ components_to_include_in_project :: proc (leaves: ^[dynamic]zd.Leaf_Template) {
 }
 
 
-
-int2string :: proc (i : int) -> string {
-    return fmt.aprintf ("%d", i)
-}
-
 ///
 
 ///
 
 demux4 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
     handle :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
-	// incoming datum is a string, containing a digit 1-4, pulse the corresponding output
-	pulse := zd.new_datum_bang ()
-	switch msg.datum.repr (msg.datum) {
-	case "1":
-	    zd.send (eh, "1", pulse, msg)
-	case "2":
-	    zd.send (eh, "2", pulse, msg)
-	case "3":
-	    zd.send (eh, "3", pulse, msg)
-	case "4":
-	    zd.send (eh, "4", pulse, msg)
+        // incoming datum is a string, containing a digit 1-4, pulse the corresponding output
+        pulse := zd.new_datum_bang ()
+        switch msg.datum.repr (msg.datum) {
+        case "1":
+            zd.send (eh, "1", pulse, msg)
+        case "2":
+            zd.send (eh, "2", pulse, msg)
+        case "3":
+            zd.send (eh, "3", pulse, msg)
+        case "4":
+            zd.send (eh, "4", pulse, msg)
         case:
-	    fmt.assertf (false, "fatal internal error in demux4")
-	}
+            fmt.assertf (false, "fatal internal error in demux4")
+        }
     }
     
     name_with_id := std.gensym("demux4")
@@ -92,19 +87,19 @@ demux4 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
 }
 
 //
-random2 :: proc (name : string, owner : ^zd.Eh) -> ^zd.Eh {
+random0d :: proc (name : string, owner : ^zd.Eh) -> ^zd.Eh {
     handle :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
-	// incoming datum is a string, containing a digit 1-4, pulse the corresponding output
-	pulse := zd.new_datum_bang ()
-	data: [2]int = { 1, 2 }
-	switch rand.choice (data[:]) {
-	case 1:
-	    zd.send (eh, "1", pulse, msg)
-	case 2:
-	    zd.send (eh, "2", pulse, msg)
+        // incoming datum is a string, containing a digit 1-4, pulse the corresponding output
+        pulse := zd.new_datum_bang ()
+        data: [2]int = { 1, 2 }
+        switch rand.choice (data[:]) {
+        case 1:
+            zd.send (eh, "1", pulse, msg)
+        case 2:
+            zd.send (eh, "2", pulse, msg)
         case:
-	    fmt.assertf (false, "fatal internal error in random")
-	}
+            fmt.assertf (false, "fatal internal error in random")
+        }
     }
     
     name_with_id := std.gensym("Random")
@@ -113,40 +108,6 @@ random2 :: proc (name : string, owner : ^zd.Eh) -> ^zd.Eh {
 
 //
 
-Shell_buffer :: struct {
-    buffer : string
-}
-
-shell_out :: proc (name : string, owner : ^zd.Eh) -> ^zd.Eh {
-    handle :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
-	fmt.println (msg)
-	inst := &eh.instance_data.(Shell_buffer)
-	switch msg.port {
-	case "arg":
-	    inst.buffer = fmt.aprintf ("%v%v", inst.buffer, msg.datum.repr (msg.datum))
-	case "run":
-	    fmt.println ("run", inst.buffer)
-	    stdout, stderr := zd.run_command (inst.buffer, "")
-	    fmt.println ("EXIT run")
-	    inst.buffer = ""
-	    if len (stderr) > 0 {
-		zd.send_string (eh, "✗", stderr, msg)
-	    } else {
-		zd.send_string (eh, "", stdout, msg)
-	    }
-        case:
-	    fmt.assertf (false, "FATAL internal error in shell_out %v", msg)
-	}
-    }
-    name_with_id := std.gensym("shell_out")
-    instp := new (Shell_buffer)
-    instp.buffer = ""
-    return zd.make_leaf (name_with_id, owner, instp^, handle)
-}
-
-//
-
-ask
 f :: proc (menu : string) -> rune {
     fmt.println (menu)
     buff : [16]u8
