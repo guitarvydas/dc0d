@@ -5,15 +5,13 @@ import zd "0d/odin"
 
 init :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
 	handler :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
-	fmt.println ("*** init ***")
-p.ok = max_recharge
+	p.ok = max_recharge
 p.wallet = 0
 p.pwr = 4
 ndays = 0
-fmt.println ("*** init EXIT ***")
 	zd.send (eh=eh, port="", datum=zd.new_datum_bang (), causingMessage=msg)
 	}
-	return zd.make_leaf ("\u0117init&#xa;fmt.println (\"*** init ***\")&#xa;p.ok = max_recharge&#xa;p.wallet = 0&#xa;p.pwr = 4&#xa;ndays = 0&#xa;fmt.println (\"*** init EXIT ***\")", owner, nil, handler)
+	return zd.make_leaf ("\u0117init&#xa;p.ok = max_recharge&#xa;p.wallet = 0&#xa;p.pwr = 4&#xa;ndays = 0", owner, nil, handler)
     }
 Rest1 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
 	handler :: proc (eh: ^zd.Eh, msg: ^zd.Message) {
@@ -134,7 +132,7 @@ f0 :: proc (name: string, owner : ^zd.Eh) -> ^zd.Eh {
 	return zd.make_leaf ("\u03bbf0 p.wallet >= cost_sword", owner, nil, handler)
     }
 generated_components_to_include_in_project :: proc (leaves: ^[dynamic]zd.Leaf_Template) {
-zd.append_leaf (leaves, zd.Leaf_Template { name = "\u0117init&#xa;fmt.println (\"*** init ***\")&#xa;p.ok = max_recharge&#xa;p.wallet = 0&#xa;p.pwr = 4&#xa;ndays = 0&#xa;fmt.println (\"*** init EXIT ***\")", instantiate = init })
+zd.append_leaf (leaves, zd.Leaf_Template { name = "\u0117init&#xa;p.ok = max_recharge&#xa;p.wallet = 0&#xa;p.pwr = 4&#xa;ndays = 0", instantiate = init })
 zd.append_leaf (leaves, zd.Leaf_Template { name = "\u0117Rest1&#xa;p.ok = max_recharge&#xa;ndays += 1", instantiate = Rest1 })
 zd.append_leaf (leaves, zd.Leaf_Template { name = "\u0117Generate_Monster&#xa;m.wallet = cost_sword&#xa;m.ok = max_recharge&#xa;m.pwr = damage_sword", instantiate = Generate_Monster })
 zd.append_leaf (leaves, zd.Leaf_Template { name = "\u0117adventure&#xa;spoils := 0", instantiate = adventure })
