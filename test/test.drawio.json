@@ -10,6 +10,42 @@
             {
                 "name": "'1=adventure 2=shop 3=rest 4=quit'",
                 "id": 11
+            },
+            {
+                "name": "range",
+                "id": 15
+            },
+            {
+                "name": "Demux 4",
+                "id": 22
+            },
+            {
+                "name": "'out of range'",
+                "id": 29
+            },
+            {
+                "name": "'1'",
+                "id": 31
+            },
+            {
+                "name": "'4'",
+                "id": 34
+            },
+            {
+                "name": "1then2",
+                "id": 37
+            },
+            {
+                "name": "1then2",
+                "id": 42
+            },
+            {
+                "name": "'in range'",
+                "id": 49
+            },
+            {
+                "name": "'2'",
+                "id": 55
             }
         ],
         "connections": [
@@ -21,10 +57,140 @@
                 },
                 "source_port": "",
                 "target": {
-                    "name": "'1=adventure 2=shop 3=rest 4=quit'",
-                    "id": 11
+                    "name": "Demux 4",
+                    "id": 22
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "Demux 4",
+                    "id": 22
+                },
+                "source_port": "2",
+                "target": {
+                    "name": "'2'",
+                    "id": 55
                 },
                 "target_port": "\u237a"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "'2'",
+                    "id": 55
+                },
+                "source_port": "\u237a",
+                "target": {
+                    "name": "1then2",
+                    "id": 42
+                },
+                "target_port": "2"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "1then2",
+                    "id": 37
+                },
+                "source_port": "1",
+                "target": {
+                    "name": "range",
+                    "id": 15
+                },
+                "target_port": "low"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "1then2",
+                    "id": 42
+                },
+                "source_port": "2",
+                "target": {
+                    "name": "range",
+                    "id": 15
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "1then2",
+                    "id": 42
+                },
+                "source_port": "1",
+                "target": {
+                    "name": "range",
+                    "id": 15
+                },
+                "target_port": "high"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "Demux 4",
+                    "id": 22
+                },
+                "source_port": "2",
+                "target": {
+                    "name": "'4'",
+                    "id": 34
+                },
+                "target_port": "\u237a"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "Demux 4",
+                    "id": 22
+                },
+                "source_port": "2",
+                "target": {
+                    "name": "'1'",
+                    "id": 31
+                },
+                "target_port": "\u237a"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "'4'",
+                    "id": 34
+                },
+                "source_port": "\u237a",
+                "target": {
+                    "name": "1then2",
+                    "id": 37
+                },
+                "target_port": "2"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "'1'",
+                    "id": 31
+                },
+                "source_port": "\u237a",
+                "target": {
+                    "name": "1then2",
+                    "id": 37
+                },
+                "target_port": "1"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "1then2",
+                    "id": 37
+                },
+                "source_port": "2",
+                "target": {
+                    "name": "1then2",
+                    "id": 42
+                },
+                "target_port": "1"
             },
             {
                 "dir": 1,
@@ -40,6 +206,58 @@
                 "target_port": ""
             },
             {
+                "dir": 1,
+                "source": {
+                    "name": "range",
+                    "id": 15
+                },
+                "source_port": "",
+                "target": {
+                    "name": "'in range'",
+                    "id": 49
+                },
+                "target_port": "\u237a"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "range",
+                    "id": 15
+                },
+                "source_port": "out of range",
+                "target": {
+                    "name": "'out of range'",
+                    "id": 29
+                },
+                "target_port": "\u237a"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "Demux 4",
+                    "id": 22
+                },
+                "source_port": "1",
+                "target": {
+                    "name": "'1=adventure 2=shop 3=rest 4=quit'",
+                    "id": 11
+                },
+                "target_port": "\u237a"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "range",
+                    "id": 15
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
+            },
+            {
                 "dir": 2,
                 "source": {
                     "name": "prompt",
@@ -51,6 +269,32 @@
                     "id": 0
                 },
                 "target_port": "\u2717"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "'in range'",
+                    "id": 49
+                },
+                "source_port": "\u237a",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "'out of range'",
+                    "id": 29
+                },
+                "source_port": "\u237a",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": ""
             },
             {
                 "dir": 2,

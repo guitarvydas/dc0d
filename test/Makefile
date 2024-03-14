@@ -1,11 +1,16 @@
-LIBSRC=0D/odin/std
+LIBSRC=../0D/odin/std
 ODIN_FLAGS ?= -debug -o:none
-D2J=0d/das2json/das2json
+D2J=../0d/das2json/das2json
 
-dev: clean run
+dev: clean run-test-2
 
-run: test transpile.drawio.json
-	./test ! main test.drawio $(LIBSRC)/transpile.drawio
+run : run-test-1 run-test-2
+
+run-test-1: test transpile.drawio.json
+	./test 1 main test.drawio $(LIBSRC)/transpile.drawio
+
+run-test-2: test transpile.drawio.json
+	./test 2 main test.drawio $(LIBSRC)/transpile.drawio
 
 test: test.drawio.json
 	odin build . $(ODIN_FLAGS)
